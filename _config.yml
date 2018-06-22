@@ -22,11 +22,16 @@ url: https://niloysh.github.io # the base hostname & protocol for your site, e.g
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydejack
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-avatar
+  - jekyll-remote-theme
+
+
+# theme: jekyll-theme-hydejack
+remote_theme: qwtel/hydejack@gem-7.5.1
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -51,8 +56,6 @@ author:
   email: niloysaha.ns@gmail.com
   about: |
     Hi! I'm Niloy Saha.
-
-    This is another paragraph.
   social:
     twitter: niloysh13
     github:  niloysh
@@ -61,14 +64,20 @@ author:
 
 defaults:
   - scope:
-      path: home.md
+      path: research/index.md
     values:
       menu: true
       order: 1
   - scope:
-      path: blog.md
+      path: blog/index.md
     values:
       menu: true
       order: 2
+  # - scope:
+  #     path: research.md
+  #     values:
+  #     menu: true
+  #     order: 2
+
 
 
