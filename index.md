@@ -19,4 +19,4 @@ I have served as a referee for the following journals and symposiums
 - Int. J. of Communication Systems (Wiley)
 - Int. Symp. on Personal, Indoor and Mobile Radio Communications (IEEE)
 
-You can also [download](assets/niloy-cv.pdf) my full full Curriculum Vitae.
+You can also [download](assets/niloy-cv.pdf) my full Curriculum Vitae.
