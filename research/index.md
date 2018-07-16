@@ -22,5 +22,5 @@ DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) <!--[[Code]](https://
 - **N. Saha**, S. Misra and S. Bera, "QoS-Aware Adaptive Flow-rule Aggregation in Software-Defined IoT", in *Proc. of the IEEE GLOBECOM*, 2018. (Accepted) <br>
 <!-- [[PDF]](../assets/Dynamite.pdf) -->
 
-- S. Bera, S. Misra and **N. Saha**, "DynamiTE: Dynamic Traffic Engineering in Software-Defined Cyber Physical Systems", in *Proc. of the IEEE ICC Workshop on Communication, Computing, and Networking in Cyber Physical Systems*, 2018. <br>
+- S. Bera, S. Misra and **N. Saha**, "[DynamiTE: Dynamic Traffic Engineering in Software-Defined Cyber Physical Systems](https://ieeexplore.ieee.org/document/8403550/)", in *Proc. of the IEEE ICC Workshop on Communication, Computing, and Networking in Cyber Physical Systems*, 2018. <br>
 DOI: 10.1109/ICCW.2018.8403550 [[PDF]](../assets/DynamiTE.pdf)
