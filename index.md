@@ -15,6 +15,7 @@ I have served as a teaching assistant for the Programming and Data Structures La
 
 ## Professional Service
 I have served as a referee for the following journals and symposiums
+- IEEE Transactions on Vehicular Technology
 - Int. J. of Communication Networks and Distributed Systems (InderScience)
 - Int. J. of Communication Systems (Wiley)
 - Int. Symp. on Personal, Indoor and Mobile Radio Communications (IEEE)
