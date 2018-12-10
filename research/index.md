@@ -15,7 +15,7 @@ Software-defined networking (SDN) is a paradigm shift from traditional networkin
 You can also browse my [google scholar profile](https://scholar.google.co.in/citations?hl=en&user=gSAv2FUAAAAJ)
 ### Top-tier Journals
 - **N. Saha**, S. Bera, S. Misra, "[Sway: Traffic-Aware QoS Routing in Software-Defined IoT](https://ieeexplore.ieee.org/document/8385144/)", in *IEEE Trans. on Emerging Topics in Computing*, 2018. <br>
-DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) <!--[[Code]](https://github.com/niloysh/pox/tree/eel/ext/sway) -->
+DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) [[Code]](https://github.com/niloysh/sway) 
 
 
 ### Top-tier Conferences
