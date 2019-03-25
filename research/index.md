@@ -17,6 +17,8 @@ You can also browse my [google scholar profile](https://scholar.google.co.in/cit
 - **N. Saha**, S. Bera, S. Misra, "[Sway: Traffic-Aware QoS Routing in Software-Defined IoT](https://ieeexplore.ieee.org/document/8385144/)", in *IEEE Trans. on Emerging Topics in Computing*, 2018. <br>
 DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) [[Code]](https://github.com/niloysh/sway)
 
+- S. Misra and **N. Saha** "[Detour: Dynamic Task Offloading in Software-Defined Fog for IoT Applications](https://ieeexplore.ieee.org/document/8672614)", in *IEEE J. on Selected Areas in Communications*, 2019. <br>
+DOI: 10.1109/JSAC.2019.2906793 [[PDF]](../assets/Detour.pdf)
 
 ### Top-tier Conferences
 - **N. Saha**, S. Misra and S. Bera, "QoS-Aware Adaptive Flow-rule Aggregation in Software-Defined IoT", in *Proc. of the IEEE GLOBECOM*, 2018. <br>
