@@ -3,7 +3,13 @@ layout: page
 title: Research
 ---
 
-### MS thesis (2016-Present)
+### Current Work (2019-Present)
+I am currently exploring programmable networks, network virtualization (NFV), their performance,
+and their interplay in the context of 5G and IoT. In NFV, decomposing network functions into modular elements that can be re-used across multiple applications could help in addressing some crucial challenges of IoT, such as scalability and heterogeneity. Programmable data planes offer the ability to forward
+packets based on arbitrary frame formats and could be used to support operations such as
+in-network data processing, both of which can advantageous for IoT. The great variety of use-cases in IoT necessitate different service-function-chains for subsets of traffic, while maintaining satisfactory isolation among them to deal with sensitive data (applications such as healthcare and security). A fine-grained programming model for network-wide data plane programmability could be used to address the requirements of IoT applications.
+
+### MS thesis (2016-2018)
 *QoS-Aware Software-Defined Networks for IoT Applications* <br>
 Advisor: [Dr. Sudip Misra](http://cse.iitkgp.ac.in/~smisra/index.html)
 
