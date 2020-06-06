@@ -20,13 +20,20 @@ Software-defined networking (SDN) is a paradigm shift from traditional networkin
 
 You can also browse my [google scholar profile](https://scholar.google.co.in/citations?hl=en&user=gSAv2FUAAAAJ)
 ### Top-tier Journals
-- **N. Saha**, S. Bera, S. Misra, "[Sway: Traffic-Aware QoS Routing in Software-Defined IoT](https://ieeexplore.ieee.org/document/8385144/)", in *IEEE Trans. on Emerging Topics in Computing*, 2018. <br>
-DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) [[Code]](https://github.com/niloysh/sway)
+- S. Bera, S. Misra, and **N. Saha**, "[Traffic-aware Dynamic Controller Assignment in SDN](https://ieeexplore.ieee.org/document/9046815)", in *IEEE Trans. on Communications*, 2020. <br> DOI: 10.1109/TCOMM.2020.2983168 [[PDF]](../assets/controller_assignment.pdf)
 
 - S. Misra and **N. Saha** "[Detour: Dynamic Task Offloading in Software-Defined Fog for IoT Applications](https://ieeexplore.ieee.org/document/8672614)", in *IEEE J. on Selected Areas in Communications*, 2019. <br>
 DOI: 10.1109/JSAC.2019.2906793 [[PDF]](../assets/Detour.pdf)
 
+- **N. Saha**, S. Bera, S. Misra, "[Sway: Traffic-Aware QoS Routing in Software-Defined IoT](https://ieeexplore.ieee.org/document/8385144/)", in *IEEE Trans. on Emerging Topics in Computing*, 2018. <br>
+DOI: 10.1109/TETC.2018.2847296 [[PDF]](../assets/Sway.pdf) [[Code]](https://github.com/niloysh/sway)
+
+
 ### Top-tier Conferences
+
+- S. Misra, **N. Saha**, and R. Bhakta, "[Traffic-Aware Rule-Cache Assignment in SDN:
+Security Implications](#)", in *Proc. of the IEEE ICC Workshop on Secure & Dependable Software Defined Networking for Sustainable Smart Communities*, 2020. (Accepted)
+
 - **N. Saha**, S. Misra and S. Bera, "[QoS-Aware Adaptive Flow-rule Aggregation in Software-Defined IoT](https://ieeexplore.ieee.org/document/8647471)", in *Proc. of the IEEE GLOBECOM*, 2018. DOI: 10.1109/GLOCOM.2018.8647471 <br>
 [[PDF]](../assets/Dual-Globecom.pdf) [[Slides]](../assets/Dual-Globecom-slides.pdf)
 

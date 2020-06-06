@@ -13,7 +13,7 @@ I was also associated with the IoT based Healthcare Monitoring project [AmbuSens
 I have served as a teaching assistant for the Programming and Data Structures Lab (CS19101) at IIT Kharagpur from Spring 2017 - Autumn 2018.
 
 ## Volunteer Activties
-I have been an active volunteer with the IEEE at the Student Branch of IIT Kharagpur. Currently, I serve as the Treasurer of the IEEE Student Branch at IIT Kharagpur. Prior to this, I have served as a member of the Student Activity Committee (SAC) in the year 2018-2019. I have helped in successfully conceiving and organizing multiple highly successful events locally such as technical report writing workshops using Latex, MATLAB workshops, and IEEE outreach programmes, as year-long activities.
+I have been an active volunteer with the IEEE at the Student Branch of IIT Kharagpur. Currently, I serve as the Vice-chair of the IEEE Student Branch at IIT Kharagpur. Prior to this, I have served as a Treasurer in the year 2019-2020, and as a member of the Student Activity Committee (SAC) in the year 2018-2019. I have helped in successfully conceiving and organizing multiple highly successful events locally such as technical report writing workshops using Latex, MATLAB workshops, and IEEE outreach programmes, as year-long activities.
 
 
 ## Professional Service
