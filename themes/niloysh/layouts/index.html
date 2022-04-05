@@ -1,5 +1,85 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
-</div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a PhD student in the Systems and Networking Group at the University of Waterloo, working with Prof. Raouf Boutaba. My research spans several areas in systems and networking, including 5G networks, AI-driven network management and orchestration, and software-defined networking.</p>
+    <p>Before joining UWaterloo, I worked in the Smart Wireless Applications and Networking Group at the Indian Institute of Technology, Kharagpur with Prof. Sudip Misra.</p>
+    <p>For more information about my research, check out some of my current and past projects and scientific publications.</p>
+  </section>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-bookmark"></i></div>
+      <div>Next-generation mobile networks</div>
+    </div>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-bookmark"></i></div>
+      <div>AI-driven network management and orchestration</div>
+    </div>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-bookmark"></i></div>
+      <div>Software-defined networking and network function virtualization</div>
+    </div>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-bookmark"></i></div>
+      <div>Wireless networks</div>
+    </div>
+    
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <!-- edu item -->
+    <div class="edu-item">
+      <div class="icon-item">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          MS in Computer Science <br> <span class="text-muted">Indian Institute of Technology Kharagpur</span>
+        </div>
+      </div>
+      <div class="edu-date">2019</div>
+    </div>
+
+    <!-- edu item -->
+    <div class="edu-item">
+      <div class="icon-item">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          BTech in Electronics & Communications Engineering <br> <span class="text-muted">Institute of Engineering & Management, Kolkata</span>
+        </div>
+      </div>
+      <div class="edu-date">2015</div>
+    </div>
+
+  </section>
+
+  <section id="news">
+    <h2>What's New</h2>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-newspaper"></i></div>
+      <div>This is the first news item.</div>
+    </div>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-newspaper"></i></div>
+      <div>This is the second news item which is longer than the first one.</div>
+    </div>
+
+    <div class="icon-item">
+      <div><i class="fa-solid fa-newspaper"></i></div>
+      <div>September 2021: Moved to Ontario Canada.</div>
+    </div>
+
+  </section>
+
+
+  
+
 {{ end }}

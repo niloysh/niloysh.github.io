@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box; /* make sure padding is included in width and height of element */
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-body: #fff;
+    --color-text: #1e1e1e;
+    --color-text-muted: #9a9a9a;
+    --color-green-bg: #ecfaf8;
+    --color-gray-bg: #f5f5f5;
+    --color-primary: #215144;
+    --color-secondary: #3A836D;
+    --color-accent:#69afb8;
+
+    
+
+}
+
+body, html {
+    height: 100vh;
+    margin: 0;
+    border-top: 2px solid var(--color-text);
+}
+
+h2 {
+    color: var(--color-accent);
+}
+
+.page {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 3fr;
+    grid-template-rows: 8% auto 30% auto 6%;
+    grid-template-areas:
+        "header header header"
+        "sidebar about about"
+        "sidebar interests education"
+        "sidebar news news"
+        "footer footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+aside a {
+    color: var(--color-accent);
+}
+
+.btn-cv {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--color-accent);
+    padding: 5px 10px;
+}
+
+.btn-cv a {
+    text-decoration: none;
+    color: var(--color-body);
+}
+
+
+
+header {
+    grid-area: header;
+}
+
+#about {
+    grid-area: about;
+    padding: 0 20px;
+}
+
+#interests {
+    grid-area: interests;
+    padding: 0 20px;
+}
+
+#education {
+    grid-area: education;
+    padding: 0 20px;
+}
+
+#news {
+    grid-area: news;
+    padding: 0 20px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 0.8em;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+.photo {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.icon-item {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+}
+
+
+/* 600 px and smaller */
+@media only screen and (max-width: 768px) {
+
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(5, 3fr) 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "about"
+            "interests"
+            "education"
+            "news"
+            "footer";
+    }
+
+    
+    
+}
