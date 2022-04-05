@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box; /* make sure padding is included in width and height of element */
     font-size: 16px;
-    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,6 +18,8 @@ html {
     --color-primary: #215144;
     --color-secondary: #3A836D;
     --color-accent:#69afb8;
+    --color-sidebar:#f2f3f7;
+    --color-blue: #2c98f0;
 
     
 
@@ -27,26 +28,33 @@ html {
 body, html {
     height: 100vh;
     margin: 0;
-    border-top: 2px solid var(--color-text);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
-    color: var(--color-accent);
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: var(--color-blue);
 }
 
 .page {
     height: 100vh;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 3fr 3fr;
     grid-template-rows: 8% auto 30% auto 6%;
     grid-template-areas:
-        "header header header"
+        "sidebar header header"
         "sidebar about about"
         "sidebar interests education"
         "sidebar news news"
-        "footer footer footer";
+        "sidebar footer footer";
 }
 
 aside {
@@ -56,7 +64,8 @@ aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 3em 20px;
+    background-color: var(--color-sidebar);
 }
 
 .social {
@@ -65,20 +74,17 @@ aside {
     font-size: 24px;
 }
 
-aside a {
-    color: var(--color-accent);
-}
-
 .btn-cv {
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: var(--color-accent);
+    display: inline-flex;
+    width: auto;
+    border-radius: 2px;
     padding: 5px 10px;
+    outline: 1px solid black;
 }
 
 .btn-cv a {
     text-decoration: none;
-    color: var(--color-body);
+    color: black;
 }
 
 
@@ -122,7 +128,7 @@ footer {
 
 
 .photo {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 50%;
 }
 
