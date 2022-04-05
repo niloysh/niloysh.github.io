@@ -48,9 +48,7 @@ a {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 3fr 3fr;
-    grid-template-rows: 8% auto 30% auto 6%;
     grid-template-areas:
-        "sidebar header header"
         "sidebar about about"
         "sidebar interests education"
         "sidebar news news"
@@ -59,13 +57,20 @@ a {
 
 aside {
     grid-area: sidebar;
+    background-color: var(--color-sidebar);
+}
+
+.sidebar-content {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 3em 20px;
-    background-color: var(--color-sidebar);
 }
 
 .social {
@@ -89,13 +94,13 @@ aside {
 
 
 
-header {
+/* header {
     grid-area: header;
-}
+} */
 
 #about {
     grid-area: about;
-    padding: 0 20px;
+    padding: 3em 20px 20px 20px;
 }
 
 #interests {
@@ -121,11 +126,25 @@ footer {
     font-size: 0.8em;
 }
 
-.nav {
+nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--color-blue);
+    border-bottom: 1px solid var(--color-blue);
+    font-weight: 500;
+}
 
 .photo {
     max-width: 150px;
@@ -155,7 +174,6 @@ footer {
 
     .page {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr repeat(5, 3fr) 1fr;
         grid-template-areas:
             "header"
             "sidebar"
@@ -164,6 +182,16 @@ footer {
             "education"
             "news"
             "footer";
+    }
+
+    .sidebar-content {
+        position: initial;
+        top: initial;
+        height: initial;
+    }
+
+    #about {
+        padding: 0px 20px 20px 20px;
     }
 
     
