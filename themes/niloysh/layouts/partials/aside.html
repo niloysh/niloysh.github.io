@@ -1,37 +1,29 @@
 <aside>
-  <div class="sidebar-content-mobile">
-    <img class="photo" src="/images/niloy_photo_2021-09.jpg" alt="">
-    <section class="affiliation">
-      <h2 class="name">Niloy Saha</h2>
-      <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
-    </section>
-
-    <section class="social">
-      <a href="#"><i class="fa-solid fa-envelope-open"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="ai ai-google-scholar"></i></a>
-    </section>
-  </div>
+  
 
   <div class="menu-btn">
     <div class="menu-btn__burger"></div>
   </div>
 
-  <div class="sidebar-content" id="sidebar" data-visible="false">
-    
-    <img class="photo" src="/images/niloy_photo_2021-09.jpg" alt="">
-    <section class="affiliation">
-      <h2 class="name">Niloy Saha</h2>
+  <div class="sidebar" id="sidebar" data-visible="false">
+
+    <div class="sidebar__profile">
+      <img class="sidebar__photo" src="/images/niloy_photo_2021-09.jpg" alt="">
+    <section class="sidebar__affiliation">
+      <h2>Niloy Saha</h2>
       <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
     </section>
 
-    <section class="social">
+    <section class="sidebar__social">
       <a href="#"><i class="fa-solid fa-envelope-open"></i></a>
       <a href="#"><i class="fa-brands fa-github"></i></a>
       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href="#"><i class="ai ai-google-scholar"></i></a>
     </section>
+
+    </div>
+    
+    
 
     <nav>
       <a href="#" class="active">Home</a>
@@ -41,7 +33,7 @@
       <a href="#">Downloads</a>
     </nav>
 
-    <div class="copyright">
+    <div class="sidebar__copyright">
       <p>Copyright (c) {{ now.Format "2006"}} Niloy Saha <br>Made with <a href="https://gohugo.io/">Hugo</a></p>
     </div>
 

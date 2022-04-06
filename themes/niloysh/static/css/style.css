@@ -51,6 +51,7 @@ a {
     display: grid;
     grid-template-columns: 1.5fr 3fr 3fr;
     grid-template-areas:
+        "sidebar profile profile"
         "sidebar about about"
         "sidebar interests education"
         "sidebar news news"
@@ -59,19 +60,10 @@ a {
 
 aside {
     grid-area: sidebar;
-    background-color: var(--color-sidebar);
+    
 }
 
-.sidebar-content-mobile {
-    display: none;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3em 20px 1em 20px;
-}
-
-.sidebar-content {
+.sidebar {
     position: sticky;
     top: 0;
     height: 100vh;
@@ -81,13 +73,39 @@ aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3em 20px 1em 20px;
+    background-color: var(--color-sidebar);
+    padding: 0 20px;
 }
 
-.social {
+.profile {
+    grid-area: profile;
+}
+
+.sidebar__profile, .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-sidebar);
+    padding: 3em 0 1em 0;
+}
+
+.sidebar__photo {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.sidebar__social {
     display: flex;
     gap: 15px;
     font-size: 24px;
+}
+
+.sidebar__copyright {
+    margin-top: auto;
+    padding: 5px;
+    color: var(--color-text-muted);
+    font-size: 0.8em;
 }
 
 .btn-cv {
@@ -137,12 +155,7 @@ footer {
     font-size: 0.8em;
 }
 
-.copyright {
-    margin-top: auto;
-    padding: 5px;
-    color: var(--color-text-muted);
-    font-size: 0.8em;
-}
+
 
 nav {
     display: flex;
@@ -190,10 +203,7 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
-.photo {
-    max-width: 150px;
-    border-radius: 50%;
-}
+
 
 .icon-item {
     display: flex;
@@ -212,9 +222,17 @@ nav a:hover::after {
     font-size: 0.9em;
 }
 
+.disable-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* larger than 600px */
 @media only screen and (min-width: 600px) {
     .menu-btn {
+        display: none;
+    }
+    .profile {
         display: none;
     }
 
@@ -222,13 +240,14 @@ nav a:hover::after {
 
 
 /* 600 px and smaller */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
 
     .page {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "sidebar"
+            "profile"
             "about"
             "interests"
             "education"
@@ -236,7 +255,7 @@ nav a:hover::after {
             "footer";
     }
 
-    .sidebar-content {
+    .sidebar {
         position: fixed;
         height: auto;
         inset: 0 0 0 0%;
@@ -245,14 +264,9 @@ nav a:hover::after {
         transform: translateX(100%);
     }
 
-    .sidebar-content[data-visible="true"]{
+    .sidebar[data-visible="true"]{
         transform: translateX(0%);
     }
-
-    .sidebar-content-mobile {
-        display: flex;
-    }
-    
 
     #about {
         padding: 0px 20px 20px 20px;
