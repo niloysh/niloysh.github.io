@@ -245,7 +245,7 @@ nav a:hover::after {
         transform: translateX(100%);
     }
 
-    #sidebar:target{
+    .sidebar-content[data-visible="true"]{
         transform: translateX(0%);
     }
 
@@ -261,6 +261,7 @@ nav a:hover::after {
     
     .menu-btn {
         position: fixed;
+        z-index: 100;
         display: flex;
         justify-content: center;
         align-items: center;
