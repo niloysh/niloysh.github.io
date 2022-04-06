@@ -75,6 +75,7 @@ aside {
     text-align: center;
     background-color: var(--color-sidebar);
     padding: 0 20px;
+    overflow: scroll;
 }
 
 .profile {
