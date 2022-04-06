@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box; /* make sure padding is included in width and height of element */
     font-size: 16px;
-    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,12 +12,15 @@ html {
 :root {
     --color-body: #fff;
     --color-text: #1e1e1e;
-    --color-text-muted: #9a9a9a;
+    --color-text-muted: rgba(0, 0, 0, 0.5);
     --color-green-bg: #ecfaf8;
     --color-gray-bg: #f5f5f5;
     --color-primary: #215144;
     --color-secondary: #3A836D;
     --color-accent:#69afb8;
+    --color-sidebar:#f2f3f7;
+    --color-blue: #2c98f0;
+    --color-white: #fff;
 
     
 
@@ -27,69 +29,108 @@ html {
 body, html {
     height: 100vh;
     margin: 0;
-    border-top: 2px solid var(--color-text);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
-    color: var(--color-accent);
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
 }
 
 .page {
     height: 100vh;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 3fr 3fr;
-    grid-template-rows: 8% auto 30% auto 6%;
     grid-template-areas:
-        "header header header"
+        "sidebar profile profile"
         "sidebar about about"
         "sidebar interests education"
         "sidebar news news"
-        "footer footer footer";
+        "sidebar footer footer";
 }
 
 aside {
     grid-area: sidebar;
+    
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: var(--color-sidebar);
     padding: 0 20px;
+    overflow: scroll;
 }
 
-.social {
+.profile {
+    grid-area: profile;
+}
+
+.sidebar__profile, .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-sidebar);
+    padding: 3em 0 1em 0;
+}
+
+.sidebar__photo {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.sidebar__social {
     display: flex;
     gap: 15px;
     font-size: 24px;
 }
 
-aside a {
-    color: var(--color-accent);
+.sidebar__copyright {
+    margin-top: auto;
+    padding: 5px;
+    color: var(--color-text-muted);
+    font-size: 0.8em;
 }
 
 .btn-cv {
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: var(--color-accent);
+    display: inline-flex;
+    width: auto;
+    border-radius: 2px;
     padding: 5px 10px;
+    outline: 1px solid black;
 }
 
 .btn-cv a {
     text-decoration: none;
-    color: var(--color-body);
+    color: black;
 }
 
 
 
-header {
+/* header {
     grid-area: header;
-}
+} */
 
 #about {
     grid-area: about;
-    padding: 0 20px;
+    padding: 3em 20px 20px 20px;
 }
 
 #interests {
@@ -115,16 +156,55 @@ footer {
     font-size: 0.8em;
 }
 
-.nav {
+
+
+nav {
     display: flex;
+    gap: 5px;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* animate underline links */
+nav a::after {
+    margin-top: 5px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-blue);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.active {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+.active::after {
+    transform: scaleX(1);
 }
 
 
-.photo {
-    max-width: 200px;
-    border-radius: 50%;
-}
 
 .icon-item {
     display: flex;
@@ -143,16 +223,32 @@ footer {
     font-size: 0.9em;
 }
 
+.disable-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* larger than 600px */
+@media only screen and (min-width: 600px) {
+    .menu-btn {
+        display: none;
+    }
+    .profile {
+        display: none;
+    }
+
+}
+
 
 /* 600 px and smaller */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 599px) {
 
     .page {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr repeat(5, 3fr) 1fr;
         grid-template-areas:
             "header"
             "sidebar"
+            "profile"
             "about"
             "interests"
             "education"
@@ -160,6 +256,76 @@ footer {
             "footer";
     }
 
+    .sidebar {
+        position: fixed;
+        height: auto;
+        inset: 0 0 0 0%;
+        background-color: var(--color-sidebar);
+        transition: transform .3s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .sidebar[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    #about {
+        padding: 0px 20px 20px 20px;
+    }
+
     
-    
+    .menu-btn {
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn__burger {
+        width: 36px;
+        height: 4px;
+        background: black;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .menu-btn__burger::before, .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 4px;
+        background: black;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-10px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(10px);
+    }
+
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+ 
 }
