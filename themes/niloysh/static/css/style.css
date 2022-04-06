@@ -20,6 +20,7 @@ html {
     --color-accent:#69afb8;
     --color-sidebar:#f2f3f7;
     --color-blue: #2c98f0;
+    --color-white: #fff;
 
     
 
@@ -213,7 +214,7 @@ nav a:hover::after {
 
 /* larger than 600px */
 @media only screen and (min-width: 600px) {
-    .toggle {
+    .menu, .menu-close {
         display: none;
     }
 
@@ -238,7 +239,7 @@ nav a:hover::after {
     .sidebar-content {
         position: fixed;
         height: auto;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 0%;
         background-color: var(--color-sidebar);
         transition: transform .3s ease-in-out;
         transform: translateX(100%);
@@ -247,8 +248,6 @@ nav a:hover::after {
     #sidebar:target{
         transform: translateX(0%);
     }
-
-
 
     .sidebar-content-mobile {
         display: flex;
@@ -259,6 +258,24 @@ nav a:hover::after {
         padding: 0px 20px 20px 20px;
     }
 
-    
-    
+    .menu {
+        position: fixed;
+        display: block;
+        top: 25px;
+        right: 25px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--color-sidebar);
+    }
+
+    .menu-close {
+        position: fixed;
+        display: block;
+        top: 25px;
+        right: 25px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--color-sidebar);
+    }
+ 
 }
