@@ -25,3 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
     profileContent.innerHTML = sidebarProfileContent.innerHTML;
     
 })
+
+/* highlight current link in navbar */
+const navItem = document.querySelectorAll('.navbar a');
+navItem.forEach(el => {
+    if (el.getAttribute('href') === (location.pathname)) {
+      el.classList.add("active")
+    }
+  })

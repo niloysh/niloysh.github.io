@@ -6,7 +6,7 @@
       <h2>About Me</h2>
       {{ .Content }}
 
-      <div class="btn-cv">
+      <div class="cta-btn">
         <a href="#">Download CV</i></a>
       </div>
 
@@ -14,40 +14,45 @@
 
     <section id="interests">
       <h2>Research Interests</h2>
-
-      {{ range .Site.Data.data.interests }}
-      <div class="icon-item">
+      <div class="icon-grid-two-column">
+      {{ range .Site.Data.interests }}
+      <div class="icon-grid__item">
         <div><i class="fa-solid fa-bookmark"></i></div>
         <div>{{.}}</div>
       </div>
       {{ end }}
+      </div>
 
     </section>
 
     <section id="news">
       <h2>What's New</h2>
 
+      <div class="icon-grid-one-column">
       {{ range where .Site.RegularPages "Section" "news" }}
 
-      <div class="icon-item">
+      <div class="icon-grid__item">
         <div><i class="fa-solid fa-newspaper"></i></div>
         <div><a href="{{.Permalink}}">{{.Date.Format "Jan 2006"}} | {{.Title}}</a></div>
       </div>
       {{ end }}
+      </div>
 
     </section>
 
     <section id="Projects">
       <h2>Projects</h2>
 
-      {{ range .Site.Data.data.projects }}
+      <div class="icon-grid-one-column">
+      {{ range .Site.Data.projects }}
 
-      <div class="icon-item">
+      <div class="icon-grid__item">
         <div><i class="fa-solid fa-folder"></i></div>
         <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
       </div>
 
       {{ end }}
+      </div>
 
     </section>
 

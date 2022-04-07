@@ -4,18 +4,15 @@ title = 'Niloy Saha'
 theme = "niloysh"
 
 [menu]
-  [[menu.main]]
+  [[menu.nav]]
     name = "Home"
-    pre = "home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    name = "Posts"
-    pre = "pen-tool"
-    url = "/posts/"
+  [[menu.nav]]
+    name = "Publications"
+    url = "/publications/"
     weight = 2
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
+  [[menu.nav]]
+    name = "Education & Experience"
+    url = "/education/"
     weight = 3
