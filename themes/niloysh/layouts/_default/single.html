@@ -1,6 +1,7 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
+<main id="grid-container-single">
+    <h1>This is the single template</h1>
+    {{ .Content }}
+</main>
+
 {{ end }}

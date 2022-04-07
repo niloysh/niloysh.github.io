@@ -35,7 +35,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-h2 {
+h2, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -46,17 +46,17 @@ a {
 
 .page {
     height: 100vh;
-    max-width: 1170px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        "sidebar profile profile"
-        "sidebar about about"
-        "sidebar interests education"
-        "sidebar news news"
-        "sidebar footer footer";
+        "sidebar header"
+        "sidebar content"
+        "sidebar footer";
 }
+
 
 aside {
     grid-area: sidebar;
@@ -76,10 +76,6 @@ aside {
     background-color: var(--color-sidebar);
     padding: 0 20px;
     overflow: scroll;
-}
-
-.profile {
-    grid-area: profile;
 }
 
 .sidebar__profile, .profile {
@@ -122,30 +118,8 @@ aside {
     color: black;
 }
 
-
-
-/* header {
-    grid-area: header;
-} */
-
-#about {
-    grid-area: about;
-    padding: 3em 20px 20px 20px;
-}
-
-#interests {
-    grid-area: interests;
-    padding: 0 20px;
-}
-
-#education {
-    grid-area: education;
-    padding: 0 20px;
-}
-
-#news {
-    grid-area: news;
-    padding: 0 20px;
+.content {
+    padding: 30px;
 }
 
 footer {
@@ -245,15 +219,13 @@ nav a:hover::after {
 
     .page {
         grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
             "sidebar"
-            "profile"
-            "about"
-            "interests"
-            "education"
-            "news"
+            "header"
+            "content"
             "footer";
+        
     }
 
     .sidebar {
@@ -269,10 +241,9 @@ nav a:hover::after {
         transform: translateX(0%);
     }
 
-    #about {
-        padding: 0px 20px 20px 20px;
+    .profile {
+        margin: -30px -30px 0px -30px;
     }
-
     
     .menu-btn {
         position: fixed;
