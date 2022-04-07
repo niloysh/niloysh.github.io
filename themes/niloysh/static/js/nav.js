@@ -22,8 +22,9 @@ var profileContent = document.querySelector('.profile');
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    profileContent.innerHTML = sidebarProfileContent.innerHTML;
-    
+    if (profileContent) {
+        profileContent.innerHTML = sidebarProfileContent.innerHTML;
+    }
 })
 
 /* highlight current link in navbar */

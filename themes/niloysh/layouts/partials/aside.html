@@ -15,10 +15,9 @@
     </section>
 
     <section class="sidebar__social">
-      <a href="#"><i class="fa-solid fa-envelope-open"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="ai ai-google-scholar"></i></a>
+      {{ range .Site.Menus.social }}
+      <a href="{{ .URL }}">{{ .Pre }}</a>
+      {{ end }}
     </section>
 
     </div>

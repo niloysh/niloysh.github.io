@@ -47,6 +47,12 @@ a:hover {
     border-color: var(--color-link);
 }
 
+iframe {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+}
+
 .page {
     height: 100vh;
     max-width: 1000px;
@@ -97,12 +103,18 @@ aside {
 
 .sidebar__social {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 0px 15px;
     font-size: 24px;
+    margin: auto;
+    justify-content: center;
 }
 
 .sidebar__social a {
     border-bottom: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .sidebar__copyright {
