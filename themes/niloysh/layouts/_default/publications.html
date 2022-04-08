@@ -2,7 +2,7 @@
 <main class="content" id="publications">
   <section>
     <h2>Publications</h2>
-
+    {{ if .Params.journals }}
     <h4>Journal</h4>
     <div class="publication-group">
       {{ range sort .Site.Data.journals "date" "desc"}}
@@ -16,7 +16,9 @@
       </div>
       {{ end }}
     </div>
+    {{ end }}
 
+    {{ if .Params.conferences }}
     <h4>Conference</h4>
     <div class="publication-group">
       {{ range sort .Site.Data.conferences "date" "desc"}}
@@ -30,8 +32,18 @@
       </div>
       {{ end }}
     </div>
+    {{ end }}
 
-    
+    {{ if .Params.patents }}
+    <h4>Patents</h4>
+    <div class="publication-group">
+      {{ range sort .Site.Data.patents "date" "desc"}}
+      <div class="publication">
+        <div class="publication__item">{{.patent}}</div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
   </section>
 </main>
 

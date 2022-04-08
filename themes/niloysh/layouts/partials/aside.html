@@ -9,20 +9,17 @@
 
     <div class="sidebar__profile">
       <img class="sidebar__photo" src="/images/niloy_photo_2021-09.jpg" alt="">
-    <section class="sidebar__affiliation">
-      <h2>Niloy Saha</h2>
-      <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
-    </section>
+      <section class="sidebar__affiliation">
+        <h2>Niloy Saha</h2>
+        <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
+      </section>
 
-    <section class="sidebar__social">
-      {{ range .Site.Menus.social }}
-      <a href="{{ .URL }}">{{ .Pre }}</a>
-      {{ end }}
-    </section>
-
+      <section class="sidebar__social">
+        {{ range .Site.Menus.social }}
+        <a href="{{ .URL }}">{{ .Pre }}</a>
+        {{ end }}
+      </section>
     </div>
-    
-    
 
     <nav class="navbar">
       {{ range .Site.Menus.nav }}

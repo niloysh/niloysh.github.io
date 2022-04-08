@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main class="content">
+
+    <h2>Presentations & Talks</h2>
+
+    <h4>Conferences & Workshops</h4>
+   
+        
+        <ul id="presentations">
+            {{ range .Site.Data.presentations.conference }}
+            <li><a href="{{ .link }}">{{ .talk }}</a> {{ .venue }}</li>
+            {{ end }}
+        </ul>
+        
+    
+</main>
+
+{{ end }}
+
+
+
+
+
