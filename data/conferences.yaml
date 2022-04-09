@@ -1,0 +1,22 @@
+- publication: >
+    N. Saha, S. Bera and S. Misra. Sway: Traffic-Aware QoS Routing in Software-Defined IoT. IEEE Transactions on Emerging Topics in Computing. IEEE Press. Vol. 9(1), 2018.
+  date: 2018-06
+  links:
+    - pdf: https://www.google.ca
+    - code: https://www.youtube.ca
+    - doi: https://doi.org/10.1109/TETC.2018.2847296
+
+- publication: >
+    S. Misra and N. Saha, “Detour: Dynamic Task Offloading in Software-Defined Fog for
+    IoT Applications,” IEEE Journal on Selected Areas in Communications, 2019.
+  date: 2019-03
+  pdf:
+  bibtex:
+
+- publication: >
+    N. Saha, S. Misra and S. Bera,“Q-Flag: QoS-Aware Flow-rule Aggregation in Software-Defined
+    Networks,” IEEE Internet of Things Journal. IEEE Press. Vol. 9(7), April 2022.
+  date: 2021-09
+  links:
+    - pdf:
+    - doi: https://doi.org/10.1109/JIOT.2021.3113777

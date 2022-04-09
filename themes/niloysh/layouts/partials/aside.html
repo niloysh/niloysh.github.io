@@ -9,28 +9,22 @@
 
     <div class="sidebar__profile">
       <img class="sidebar__photo" src="/images/niloy_photo_2021-09.jpg" alt="">
-    <section class="sidebar__affiliation">
-      <h2>Niloy Saha</h2>
-      <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
-    </section>
+      <section class="sidebar__affiliation">
+        <h2>Niloy Saha</h2>
+        <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
+      </section>
 
-    <section class="sidebar__social">
-      <a href="#"><i class="fa-solid fa-envelope-open"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="ai ai-google-scholar"></i></a>
-    </section>
-
+      <section class="sidebar__social">
+        {{ range .Site.Menus.social }}
+        <a href="{{ .URL }}">{{ .Pre }}</a>
+        {{ end }}
+      </section>
     </div>
-    
-    
 
-    <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">Publications</a>
-      <a href="#">Projects</a>
-      <a href="#">Teaching</a>
-      <a href="#">Downloads</a>
+    <nav class="navbar">
+      {{ range .Site.Menus.nav }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
     </nav>
 
     <div class="sidebar__copyright">

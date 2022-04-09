@@ -1,91 +1,63 @@
 {{ define "main" }}
-  <div class="profile">test</div>
-  <section id="about">
-    
-    <h2>About Me</h2>
-    <p>I'm a PhD student in the <a href="https://syn.uwaterloo.ca/" target="_blank">Systems and Networking Group</a> at the University of Waterloo, working with Prof. Raouf Boutaba. My research spans several areas in systems and networking, including 5G networks, AI-driven network management and orchestration, and software-defined networking.</p>
-    <p>Before joining UWaterloo, I worked in the Smart Wireless Applications and Networking Group at the Indian Institute of Technology, Kharagpur with Prof. Sudip Misra.</p>
-    <p>For more information about my research, check out some of my current and past projects and scientific publications.</p>
+  <main class="content">
+    <div class="profile">test</div>
+    <section id="about">
+      
+      <h2>About Me</h2>
+      {{ .Content }}
 
-    <div class="btn-cv">
-      <a href="#">Download CV</i></a>
-    </div>
-
-  </section>
-
-  <section id="interests">
-    <h2>Research Interests</h2>
-
-    <div class="icon-item">
-      <div><i class="fa-solid fa-bookmark"></i></div>
-      <div>Next-generation mobile networks</div>
-    </div>
-
-    <div class="icon-item">
-      <div><i class="fa-solid fa-bookmark"></i></div>
-      <div>AI-driven network management and orchestration</div>
-    </div>
-
-    <div class="icon-item">
-      <div><i class="fa-solid fa-bookmark"></i></div>
-      <div>Software-defined networking and network function virtualization</div>
-    </div>
-
-    <div class="icon-item">
-      <div><i class="fa-solid fa-bookmark"></i></div>
-      <div>Wireless networks</div>
-    </div>
-    
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-
-    <!-- edu item -->
-    <div class="edu-item">
-      <div class="icon-item">
-        <div><i class="fa-solid fa-graduation-cap"></i></div>
-        <div>
-          MS in Computer Science <br> <span class="text-muted">Indian Institute of Technology Kharagpur</span>
-        </div>
+      <div class="cta-btn">
+        <a href="#">Download CV</i></a>
       </div>
-      <div class="edu-date">2019</div>
-    </div>
 
-    <!-- edu item -->
-    <div class="edu-item">
-      <div class="icon-item">
-        <div><i class="fa-solid fa-graduation-cap"></i></div>
-        <div>
-          BTech in Electronics & Communications Engineering <br> <span class="text-muted">Institute of Engineering & Management, Kolkata</span>
-        </div>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <div class="icon-grid-two-column">
+      {{ range .Site.Data.interests }}
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-bookmark"></i></div>
+        <div>{{.}}</div>
       </div>
-      <div class="edu-date">2015</div>
-    </div>
+      {{ end }}
+      </div>
 
-  </section>
+    </section>
 
-  <section id="news">
-    <h2>What's New</h2>
+    <section id="news">
+      <h2>What's New</h2>
 
-    <div class="icon-item">
-      <div><i class="fa-solid fa-newspaper"></i></div>
-      <div>This is the first news item.</div>
-    </div>
+      <div class="icon-grid-one-column">
+      {{ range where .Site.RegularPages "Section" "news" }}
 
-    <div class="icon-item">
-      <div><i class="fa-solid fa-newspaper"></i></div>
-      <div>This is the second news item which is longer than the first one.</div>
-    </div>
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-newspaper"></i></div>
+        <div><a href="{{.Permalink}}">{{.Date.Format "Jan 2006"}} | {{.Title}}</a></div>
+      </div>
+      {{ end }}
+      </div>
 
-    <div class="icon-item">
-      <div><i class="fa-solid fa-newspaper"></i></div>
-      <div>September 2021: Moved to Ontario Canada.</div>
-    </div>
+    </section>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam id magni officiis odit error quidem in nobis placeat amet eligendi accusantium, natus pariatur deleniti illo dolore eum, dolores, quae ducimus necessitatibus unde maxime! Similique atque, illo minus distinctio earum quas mollitia quidem pariatur velit maiores numquam sapiente nihil temporibus, corrupti omnis unde magni repellat! Iure earum consectetur illum veniam commodi sapiente magnam, eius modi aliquam ullam asperiores ipsam magni minima. Doloremque ea animi laborum soluta ducimus aut omnis fuga. Tempore, atque? Qui dolor alias veritatis non repellendus animi harum. Nisi alias sunt accusantium vel. Eius, nisi veniam, quas voluptatem a officiis sunt mollitia quisquam aut ratione architecto nesciunt tempore voluptatibus? Vel, rerum voluptatibus vero ea similique provident. Vel animi eos repellendus tempore nobis suscipit praesentium, amet maiores, quam accusantium consequuntur earum assumenda dolores iure quidem, eligendi voluptates? Consequatur corrupti tempora illo repudiandae esse ducimus voluptas nesciunt expedita laudantium? Ab quisquam minima aliquid pariatur praesentium, necessitatibus sit facere ducimus deserunt ipsum at eius, quaerat culpa velit odit consectetur cumque, dolores aperiam consequatur quas beatae sunt dicta. Dicta asperiores, enim explicabo corrupti sed expedita vitae suscipit? Iste, minus necessitatibus, provident harum nulla iure voluptatem earum quas quidem dolores officia repellendus voluptate soluta aliquam. Ipsum error similique ad velit inventore unde voluptatum asperiores, doloremque magni, et, molestias tempora? Quibusdam blanditiis beatae inventore vel eveniet adipisci itaque placeat odio sequi tenetur, accusantium quasi. Amet maxime est quasi recusandae modi. Sequi quos aspernatur voluptate facere rerum, consectetur repellendus eum et saepe cupiditate soluta quam tempora ad ea sapiente ut quae debitis aut optio, inventore sit doloribus aperiam placeat! Blanditiis ea odio dolorem magni sint impedit neque, cumque accusamus, asperiores quae tempora quibusdam quo architecto laboriosam. Temporibus facere consequuntur iure. Inventore hic, voluptatibus doloremque tenetur, dicta beatae tempora vero eum laboriosam magnam nisi nemo exercitationem sed harum! Voluptate iste quo voluptatem laboriosam quam numquam soluta. Similique saepe provident, magni a accusamus eligendi dicta? Neque perspiciatis ipsa porro illo, nobis sint nulla, nam asperiores illum sit est cumque earum ratione fuga pariatur accusantium velit quaerat corporis modi culpa? Aliquam, perspiciatis a ipsam harum quam libero, in aliquid repellat beatae provident numquam fugit, iusto excepturi odit. Ratione temporibus deleniti commodi enim autem soluta debitis iste, ex officia, totam voluptatibus optio possimus id dignissimos qui ad minima reprehenderit, quisquam nobis nesciunt quidem numquam maxime voluptas! Labore, perferendis assumenda nulla maiores reprehenderit necessitatibus, facere animi magni iure, placeat vel?</p>
+    <section id="Projects">
+      <h2>Projects</h2>
 
-  </section>
+      <div class="icon-grid-one-column">
+      {{ range .Site.Data.projects }}
+
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-folder"></i></div>
+        <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
+      </div>
+
+      {{ end }}
+      </div>
+
+    </section>
+
+  </main>
+  
 
 
   

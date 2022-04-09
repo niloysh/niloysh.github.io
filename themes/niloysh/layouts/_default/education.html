@@ -1,0 +1,78 @@
+{{ define "main" }}
+<main class="content">
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="icon-grid">
+    {{ range .Site.Data.education }}
+    
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>{{ .degree }} <br> <span class="text-muted">{{ .institute }}</span></div>
+      </div>
+      <div class="icon-grid__date">{{ .date }}</div>
+    {{ end }}
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work Experience</h2>
+
+    <div class="icon-grid">
+    {{ range .Site.Data.experience }}
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-briefcase"></i></div>
+        <div>{{ .position }} <br> <span class="text-muted">{{ .company }}</span></div>
+      </div>
+      <div class="icon-grid__date">{{ .date }}</div>
+    {{ end }}
+    </div>
+
+  </section>
+
+  <section id="activities">
+    <h2>Professional Activities</h2>
+
+    <h4>Membership in Societies and Positions Held</h4>
+
+    <div class="icon-grid">
+    {{ range .Site.Data.memberships.societies }}
+  
+   
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-user-tie"></i></div>
+        <div>{{ .position }}</span></div>
+      </div>
+      <div class="icon-grid__date">{{ .date }}</div>
+    
+    {{ end }}
+    </div>
+
+    <h4>Peer Review</h4>
+
+    <div class="icon-grid-one-column">
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-book"></i></div>
+        <div>
+          <strong>Journals: </strong>
+          {{ delimit .Site.Data.reviewer.journal ", " }}
+        </div>
+      </div>
+
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-book"></i></div>
+        <div>
+          <strong>Conference: </strong>
+          {{ delimit .Site.Data.reviewer.conference ", " }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{ end }}
+
+
+

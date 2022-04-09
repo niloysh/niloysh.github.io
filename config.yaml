@@ -1,0 +1,46 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'Niloy Saha'
+theme: "niloysh"
+
+menu:
+  nav:
+    - name: "Home"
+      url: /
+      weight: 1
+    - name: "Publications"
+      url: /publications/
+      weight: 2
+    - name: "Education & Experience"
+      url: /education/
+      weight: 3
+    - name: "Awards & Achievements"
+      url: /awards/
+      weight: 4
+    - name: "Presentations & Talks"
+      url: /presentations/
+      weight: 5
+  
+  social:
+    - identifier: Email
+      pre: <i class="fa-solid fa-envelope-open"></i>
+      url: /contact
+      weight: 1
+    - identifier: Github
+      pre: <i class="fa-brands fa-github"></i>
+      url: https://github.com/niloysh/
+      weight: 2
+    - identifier: Linkedin
+      pre: <i class="fa-brands fa-linkedin"></i>
+      url: https://github.com/niloysh/
+      weight: 3
+    - identifier: Scholar
+      pre: <i class="ai ai-google-scholar-square"></i>
+      url: https://github.com/niloysh/
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
