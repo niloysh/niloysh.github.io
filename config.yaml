@@ -39,8 +39,18 @@ menu:
       url: https://github.com/niloysh/
       weight: 4
 
+# enable HTML markup in .md pages
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# add last modified date to pages
+enableGitInfo: true
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
 

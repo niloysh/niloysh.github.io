@@ -1,14 +1,21 @@
 {{ define "main" }}
+<main class="content">
 
-<main id="grid-container-list">
-    <h1>This is the list template</h1>
-    <ul>
-    <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
+    <section id="news">
+        <h2>News Archive</h2>
+  
+        <div class="icon-grid-one-column">
+        {{ range where .Site.RegularPages "Section" "news" }}
+  
+        <div class="icon-grid__item">
+          <div><i class="fa-solid fa-newspaper"></i></div>
+          <div><a href="{{.Permalink}}">{{.Date.Format "Jan 2006"}} | {{.Title}}</a></div>
+        </div>
+        {{ end }}
+        </div>
+  
+      </section>
+
 </main>
+
 {{ end }}

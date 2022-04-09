@@ -2,17 +2,17 @@ conference:
   - talk: >
       QoS-Aware Adaptive Flow-Rule Aggregation in Software-Defined IoT.
     venue: IEEE Global Communications Conference (GLOBECOM). Abu Dhabi, UAE, 9-13 December 2018.
-    link: /slides/saha-globecom-2018.pdf
+    link: /talks/2018-globecom.pdf
     date: 2018-12
 
   - talk: >
       Dynamic Network Slice Assignment in Software-Defined IoT Networks.
     venue: IEEE Global Communications Conference (GLOBECOM). Virtual Conference, 7-11 December 2020.
-    link: /slides/saha-globecom-2020.pdf
+    link: /talks/2020-globecom.pdf
     date: 2020-12
 
   - talk: >
       Traffic-Aware Rule-Cache Assignment in SDN: Security Implications.
     venue: IEEE International Conference on Communications. Virtual Conference, 7-11 June 2020.
-    link: /slides/misra-icc-2020.pdf
+    link: /talks/2020-icc.pdf
     date: 2020-06
