@@ -3,8 +3,8 @@ title: "Contact"
 date: 2022-04-06T19:38:03-04:00
 ---
 
-Want to get in touch with me? Email me at:
-<img src="/images/contact.png" class="image-inline">
+Want to get in touch with me? Email me at:  
+**n6saha__at__uwaterloo__dot__ca**
 
 ### Office
 DC 2554  
