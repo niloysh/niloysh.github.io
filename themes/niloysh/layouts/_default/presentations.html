@@ -7,7 +7,7 @@
    
         
         <ul id="presentations">
-            {{ range .Site.Data.presentations.conference }}
+            {{ range sort .Site.Data.presentations.conference "date" "desc" }}
             <li><a href="{{ .link }}">{{ .talk }}</a> {{ .venue }}</li>
             {{ end }}
         </ul>

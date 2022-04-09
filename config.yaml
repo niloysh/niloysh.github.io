@@ -32,15 +32,25 @@ menu:
       weight: 2
     - identifier: Linkedin
       pre: <i class="fa-brands fa-linkedin"></i>
-      url: https://github.com/niloysh/
+      url: https://www.linkedin.com/in/niloysh/
       weight: 3
     - identifier: Scholar
       pre: <i class="ai ai-google-scholar-square"></i>
-      url: https://github.com/niloysh/
+      url: https://scholar.google.ca/citations?user=gSAv2FUAAAAJ&hl=en
       weight: 4
 
+# enable HTML markup in .md pages
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# add last modified date to pages
+enableGitInfo: true
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
 

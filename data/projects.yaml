@@ -1,4 +1,12 @@
-- name: First project
-  link: http://www.google.com
-- name: Second project
-  link: http://www.rboutaba.uwaterloo.ca
+current:
+  - name: >
+      5G ELITE: AI-driven 5G Network Slice Operations & Management
+    link: https://wat5gslicing.github.io/
+  - name: >
+      5G LEAP: Flexible Open RAN Platform for 5G and beyond networks
+    link:
+
+past:
+  - name: >
+      AmbuSens IoT based Ubiquitous Healthcare Monitoring
+    link: /posts/ambusens
