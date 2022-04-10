@@ -1,18 +1,14 @@
 {{ define "main" }}
 <main class="content">
-
-    <h2>Presentations & Talks</h2>
-
-    <h4>Conferences & Workshops</h4>
-   
-        
-        <ul id="presentations">
+    <h2>{{ .Title }}</h2>
+    <section id="conferences_and_workshops">
+        <h4>Conferences & Workshops</h4>
+        <ul>
             {{ range sort .Site.Data.presentations.conference "date" "desc" }}
             <li><a href="{{ .link }}">{{ .talk }}</a> {{ .venue }}</li>
             {{ end }}
         </ul>
-        
-    
+    </section>
 </main>
 
 {{ end }}
