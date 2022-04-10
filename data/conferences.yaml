@@ -16,21 +16,21 @@
     S. Misra, N. Saha and R. Bhakta (2020). Traffic-Aware Rule-Cache Assignment in SDN: Security Implications. In Proceedings of the IEEE International Conference on Communications (ICC) Workshops. Dublin, Ireland, 7 - 11 June, 2020.
   date: 2020-06-07
   links:
-    - pdf: /papers/confererences/2020-icc.pdf
+    - pdf: /papers/conferences/2020-icc.pdf
     - doi: https://ieeexplore.ieee.org/abstract/document/9145299
 
 - publication: >
     N. Saha and S. Misra (2020). Dynamic Network Slice Assignment in Software-Defined IoT Networks. In Proceedings of the IEEE Global Communications Conference (GLOBECOM). Taipei, Taiwan, 7 - 11 December, 2020.
   date: 2020-12-07
   links:
-    - pdf: /papers/confererences/2020-globecom.pdf
+    - pdf: /papers/conferences/2020-globecom.pdf
     - doi: https://ieeexplore.ieee.org/abstract/document/9322271
 
 - publication: >
     R. Boutaba, N. Shahriar, M. A. Salahuddin, S. R. Chowdhury, N. Saha and A. James. (2021). AI-driven Closed-loop Automation in 5G and beyond Mobile Networks. In Proceedings of the 4th ACM SIGCOMM Workshop on Flexible Networks Artificial Intelligence Supported Network Flexibility and Agility (FlexNets). Virtual Conference, 23 - 27 August, 2021.
   date: 2021-08-23
   links:
-    - pdf: /papers/confererences/2020-flexnets.pdf
+    - pdf: /papers/conferences/2021-flexnets.pdf
     - doi: https://dl.acm.org/doi/10.1145/3472735.3474458
 
 - publication: >
