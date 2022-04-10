@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main class="content">
+    <h2>{{ .Title }}</h2>
+    <section id="awards">
+        <h4>Awards</h4>
+        <ul>
+            {{ range sort .Site.Data.awards "date" "desc" }}
+            <li><a href="{{ .link }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </section>
+    
+        
+    
+</main>
+
+{{ end }}
+
+
+
+
+
