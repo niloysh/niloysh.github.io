@@ -2,7 +2,6 @@ baseURL: 'https://niloysh.github.io/'
 languageCode: 'en-us'
 title: 'Niloy Saha'
 theme: 'niloysh'
-DefaultContentLanguage: 'en'
 enableRobotsTXT: true
 canonifyURLs: true
 
@@ -63,9 +62,4 @@ params:
   sitename: 'Niloy Saha'
   og_image: '/images/niloy_photo_2021-09.jpg'
 
-languages:
-  en:
-    languageName: "English"
-    languageCode: "en-us"
-    weight: 1
 
