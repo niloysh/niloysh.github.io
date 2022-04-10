@@ -14,7 +14,7 @@
 
     <section id="interests">
       <h2>Research Interests</h2>
-      <div class="icon-grid-two-column">
+      <div class="icon-grid icon-grid--two-column">
       {{ range .Site.Data.interests }}
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-bookmark"></i></div>
@@ -28,7 +28,7 @@
     <section id="news">
       <h2>What's New</h2>
 
-      <div class="icon-grid-one-column">
+      <div class="icon-grid icon-grid--one-column">
       {{ range where .Site.RegularPages "Section" "news" | first 3 }}
 
       <div class="icon-grid__item">
@@ -45,7 +45,7 @@
     <section id="Projects">
       <h2>Current Projects</h2>
 
-      <div class="icon-grid-one-column">
+      <div class="icon-grid icon-grid--one-column">
       {{ range .Site.Data.projects.current }}
 
       <div class="icon-grid__item">
@@ -62,7 +62,7 @@
 
       <h2>Past Projects</h2>
 
-      <div class="icon-grid-one-column">
+      <div class="icon-grid icon-grid--one-column">
       {{ range .Site.Data.projects.past }}
 
       <div class="icon-grid__item">
