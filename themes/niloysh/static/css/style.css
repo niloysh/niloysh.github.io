@@ -196,9 +196,16 @@ nav a:hover::after {
     color: var(--color-text);
 }
 
-.cta-btn a:hover {
+.cta-btn a:active {
     color: var(--color-background);
     background-color: var(--color-text);
+}
+
+@media (hover: hover){
+    .cta-btn a:hover {
+        color: var(--color-background);
+        background-color: var(--color-text);
+    }
 }
 
 .content {
