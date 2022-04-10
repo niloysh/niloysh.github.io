@@ -54,5 +54,5 @@ frontmatter:
     - date
     - publishDate
 
-# Google Analytics 4
-ga_analytics: "G-M0M6NQTT2V"
+params:
+  googleAnalyticsID: UA-225450829-1
