@@ -1,0 +1,63 @@
+<!-- title tags -->
+<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+<!-- description tags -->
+<meta name="description" content="{{ .Params.description }}" />
+<meta itemprop="description" content="{{ .Params.description }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
+<meta name="twitter:description" content="{{ .Params.description }}" />
+
+<!-- link tags -->
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- language tags -->
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta name="language" content="{{ .Language.LanguageName }}">
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+
+<!-- image tags -->
+{{ with .Params.image }} 
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" /> 
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" /> 
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" /> 
+{{ end }}
+
+<!-- date tags -->
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+Sitemap & RSS Feed Tags
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<!-- favicon tags -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+<link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" sizes="192x192" href="/favicons/android-chrome-192x192.png" />
+<link rel="icon" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
+
+<!-- search engine crawler tags -->
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />

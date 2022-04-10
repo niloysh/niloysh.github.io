@@ -46,39 +46,44 @@
     </section>
 
     <section id="Projects">
-      <h2>Current Projects</h2>
+      <h2>Projects</h2>
+      
+      <section id="current_projects">
+        <h4>Current Projects</h4>
+        <div class="icon-grid icon-grid--one-column">
+          {{ range .Site.Data.projects.current }}
+    
+          <div class="icon-grid__item">
+            <div><i class="fa-solid fa-folder"></i></div>
+            {{ if .link }}
+            <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
+            {{ else }}
+            {{ .name }}
+            {{ end }}
+          </div>
+    
+          {{ end }}
+          </div>
+      </section>
+      
 
-      <div class="icon-grid icon-grid--one-column">
-      {{ range .Site.Data.projects.current }}
-
-      <div class="icon-grid__item">
-        <div><i class="fa-solid fa-folder"></i></div>
-        {{ if .link }}
-        <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
-        {{ else }}
-        {{ .name }}
-        {{ end }}
-      </div>
-
-      {{ end }}
-      </div>
-
-      <h2>Past Projects</h2>
-
-      <div class="icon-grid icon-grid--one-column">
-      {{ range .Site.Data.projects.past }}
-
-      <div class="icon-grid__item">
-        <div><i class="fa-solid fa-folder"></i></div>
-        {{ if .link }}
-        <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
-        {{ else }}
-        {{ .name }}
-        {{ end }}
-      </div>
-
-      {{ end }}
-      </div>
+      <section id="past_projects">
+        <h4>Past Projects</h4>
+        <div class="icon-grid icon-grid--one-column">
+          {{ range .Site.Data.projects.past }}
+    
+          <div class="icon-grid__item">
+            <div><i class="fa-solid fa-folder"></i></div>
+            {{ if .link }}
+            <div><a href="{{ .link }}" target="_blank">{{ .name }}</a></div>
+            {{ else }}
+            {{ .name }}
+            {{ end }}
+          </div>
+    
+          {{ end }}
+          </div>
+      </section>
 
     </section>
 

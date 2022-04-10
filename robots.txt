@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /images/
-
-Sitemap: https://niloysh.github.io/sitemap.xml

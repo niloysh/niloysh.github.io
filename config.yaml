@@ -1,7 +1,10 @@
 baseURL: 'https://niloysh.github.io/'
 languageCode: 'en-us'
 title: 'Niloy Saha'
-theme: "niloysh"
+theme: 'niloysh'
+DefaultContentLanguage: 'en'
+enableRobotsTXT: true
+canonifyURLs: true
 
 menu:
   nav:
@@ -56,3 +59,13 @@ frontmatter:
 
 params:
   googleAnalyticsID: UA-225450829-1
+  description: 'Niloy Saha is a PhD student at the University of Waterloo, Ontario, Canada. His research is focused on building intelligent next-generation mobile networks.'
+  sitename: 'Niloy Saha'
+  og_image: '/images/niloy_photo_2021-09.jpg'
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+    weight: 1
+
