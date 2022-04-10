@@ -68,9 +68,10 @@ iframe {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.4fr 3fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
         "sidebar header"
+        "sidebar profile"
         "sidebar content"
         "sidebar footer";
 }
@@ -96,7 +97,8 @@ aside {
     overflow: scroll;
 }
 
-.sidebar__profile, .profile {
+.sidebar__profile {
+    grid-area: profile;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,7 +349,7 @@ footer {
     .menu-btn {
         display: none;
     }
-    .profile {
+    #profile {
         display: none;
     }
 
@@ -363,10 +365,11 @@ footer {
 
     .page {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
+        grid-template-rows: auto auto auto 1fr auto;
         grid-template-areas: 
             "sidebar"
             "header"
+            "profile"
             "content"
             "footer";
         
