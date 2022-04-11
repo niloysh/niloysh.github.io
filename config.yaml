@@ -63,7 +63,10 @@ params:
   author: Niloy Saha
   description: 'Niloy Saha is a PhD student at the University of Waterloo, Ontario, Canada. His research is focused on building intelligent next-generation mobile networks.'
   keywords:
-    - personal
+    - networks
     - research
+    - niloy
+    - saha
+  image: '/images/niloy_photo_2021-09.jpg'
 
 
