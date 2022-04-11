@@ -20,7 +20,7 @@ menuBtn.addEventListener('click', () => {
 /* highlight current link in navbar */
 const navItem = document.querySelectorAll('.navbar a');
 navItem.forEach(el => {
-    if (el.getAttribute('href') === (location.pathname)) {
+    if (el.getAttribute('href') === (location.href)) {
       el.classList.add("active")
     }
   })
