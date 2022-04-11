@@ -12,16 +12,16 @@ menu:
       weight: 1
     - name: "Publications"
       url: /publications/
-      weight: 2
+      weight: 3
     - name: "Education & Experience"
       url: /education/
-      weight: 3
+      weight: 2
     - name: "Awards & Achievements"
       url: /awards/
-      weight: 4
+      weight: 5
     - name: "Presentations & Talks"
       url: /presentations/
-      weight: 5
+      weight: 4
   
   social:
     - identifier: Email
