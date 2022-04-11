@@ -1,45 +1,26 @@
-<!-- title tags -->
-<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+<!-- title -->
+{{ $title := print .Site.Title " | " .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+<title>{{ $title }}</title>
 
-<!-- description tags -->
-<meta name="description" content="{{ .Params.description }}" />
-<meta itemprop="description" content="{{ .Params.description }}" />
-<meta property="og:description" content="{{ .Params.description }}" />
-<meta name="twitter:description" content="{{ .Params.description }}" />
+<!-- description -->
+<meta name="description" content="{{ with .Site.Params.description}}{{ . }}{{ end }}">
 
-<!-- link tags -->
+<!-- cannonical -->
+<!-- Used to indicate that there are other versions of this webpage. By implementing the canonical tag in the code, your website tells search engines that this URL is the main page -->
 <base href="{{ .Permalink }}">
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
-<meta name="url" content="{{ .Permalink }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" /> 
-<meta property="og:url" content="{{ .Permalink }}" />
 
-<!-- image tags -->
-{{ with .Params.image }} 
-  <meta itemprop="image" content="{{ . | absURL }}" />
-  <meta property="og:image" content="{{ . | absURL }}" /> 
-  <meta name="twitter:image" content="{{ . | absURL }}" />
-  <meta name="twitter:image:src" content="{{ . | absURL }}" /> 
-{{ else }}
-  <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
-  <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
-  <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
-  <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" /> 
-{{ end }}
+<!-- keywords and author -->
+<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ delimit . "," }}{{ end }}">
+<meta name="author" content="{{with .Site.Params.author }}{{ . }}{{end}}">
+<meta name="copyright" content="{{with .Site.Params.author }}{{ . }}{{end}}" />
 
-<!-- date tags -->
-<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+<!-- search engine crawler tags -->
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />
+
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
-
-{{ with .OutputFormats.Get "RSS" }}
-  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-{{ end }}
 
 <!-- favicon tags -->
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -50,6 +31,3 @@
 <link rel="icon" sizes="192x192" href="/favicons/android-chrome-192x192.png" />
 <link rel="icon" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
 
-<!-- search engine crawler tags -->
-<meta name="robots" content="index,follow" /> 
-<meta name="googlebot" content="index,follow" />
