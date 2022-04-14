@@ -3,8 +3,7 @@ title: "Contact"
 date: 2022-04-06T19:38:03-04:00
 ---
 
-Want to get in touch with me? Email me at:  
-**n6saha__at__uwaterloo__dot__ca**
+Want to get in touch with me? Email me at: firstname.lastname@uwaterloo.ca
 
 ### Office
 DC 2554  

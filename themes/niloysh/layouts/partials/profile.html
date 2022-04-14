@@ -7,7 +7,13 @@
 
     <section class="sidebar__social">
       {{ range .Site.Menus.social }}
-      <a href="{{ .URL }}">{{ .Pre }}</a>
+      <div class="icon-grid__item">
+        <a href="{{ .URL }}"> 
+          <div class="social__icon">{{ .Pre }}</div> 
+          <div class="social__name">{{.Name }}</div>
+        </a>
+      </div>
+      
       {{ end }}
     </section>
 </div>

@@ -26,21 +26,26 @@ menu:
       weight: 4
   
   social:
-    - identifier: Email
-      pre: <i class="fa-solid fa-envelope-open"></i>
-      url: /contact
-      weight: 1
+    
     - identifier: Github
+      name: Github
       pre: <i class="fa-brands fa-github"></i>
       url: https://github.com/niloysh/
-      weight: 2
+      weight: 1
     - identifier: Linkedin
+      name: Linkedin
       pre: <i class="fa-brands fa-linkedin"></i>
       url: https://www.linkedin.com/in/niloysh/
-      weight: 3
+      weight: 2
     - identifier: Scholar
-      pre: <i class="ai ai-google-scholar-square"></i>
+      name: Scholar
+      pre: <i class="ai ai-google-scholar"></i>
       url: https://scholar.google.ca/citations?user=gSAv2FUAAAAJ&hl=en
+      weight: 3
+    - identifier: Dblp
+      name: Dblp
+      pre: <i class="ai ai-dblp"></i>
+      url: https://dblp.uni-trier.de/pid/222/5598.html
       weight: 4
 
 # enable HTML markup in .md pages
