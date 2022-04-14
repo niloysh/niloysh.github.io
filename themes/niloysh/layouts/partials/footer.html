@@ -1,3 +1,9 @@
 <footer>
-    <p>Last updated: {{ .Page.Lastmod.Format "Jan 02, 2006" }}</p>
+    {{ if .Params.datafile }}
+    {{ $path := string (.Params.datafile | printf "data/%s.yaml")}}
+    <p>Last updated: {{ (os.Stat $path).ModTime.Format "Jan 02, 2006" }}</p>
+    {{ else }}
+    <p>Last updated: {{ .Lastmod.Format "Jan 02, 2006" }}</p>
+    {{ end }}
+
 </footer>

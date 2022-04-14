@@ -1,0 +1,80 @@
+journals:
+  - publication: >
+      N. Saha, S. Bera and S. Misra (2018). Sway: Traffic-Aware QoS Routing in Software-Defined IoT. IEEE Transactions on Emerging Topics in Computing. IEEE Press. Vol. 9(1), 2021.
+    date: 2018-06-14
+    links:
+      - pdf: /papers/journals/2018-tetc-sway.pdf
+      - code: https://github.com/niloysh/sdn-traffic-routing
+      - doi: https://doi.org/10.1109/TETC.2018.2847296
+
+  - publication: >
+      S. Misra and N. Saha (2019). Detour: Dynamic Task Offloading in Software-Defined Fog for
+      IoT Applications. IEEE Journal on Selected Areas in Communications. IEEE Press. Vol. 37(5), 2019.
+    date: 2019-03-21
+    links:
+      - pdf: /papers/journals/2019-jsac-detour.pdf
+      - doi: https://ieeexplore.ieee.org/document/8672614
+
+  - publication: >
+      N. Saha, S. Misra and S. Bera (2021). Q-Flag: QoS-Aware Flow-rule Aggregation in Software-Defined
+      Networks. IEEE Internet of Things Journal. IEEE Press. Vol. 9(7), 2022.
+    date: 2021-09-20
+    links:
+      - pdf: /papers/journals/2021-iotj-qflag.pdf
+      - doi: https://doi.org/10.1109/JIOT.2021.3113777
+
+  - publication: >
+      S. Bera, S. Misra; N. Saha, H. Sharif (2021). Q-Soft: QoS-aware Traffic Forwarding in Software-Defined Cyber-Physical Systems. IEEE Internet of Things Journal.
+    date: 2021-12-27
+    links:
+      - pdf: /papers/journals/2021-iotj-qsoft.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/9663215
+
+  - publication: >
+      S. Bera, S. Misra; N. Saha, H. Sharif (2020). Traffic-Aware Dynamic Controller Assignment in SDN. IEEE Transactions on Communications. IEEE Press. Vol. 68(7), 2020.
+    date: 2020-03-25
+    links:
+      - pdf: /papers/journals/2020-tc-controller-assignment.pdf
+      - doi: https://ieeexplore.ieee.org/document/9046815
+
+conferences:
+  - publication: >
+      N. Saha, S. Bera and S. Misra (2018). QoS-Aware Adaptive Flow-Rule Aggregation in Software-Defined IoT. In Proceedings of the IEEE Global Communications Conference (GLOBECOM). Abu Dhabi, UAE, 9 - 13 December, 2018.
+    date: 2018-12-09
+    links:
+      - pdf: /papers/conferences/2018-globecom.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/8647471
+
+  - publication: >
+      S. Bera, S. Misra and N. Saha (2018). DynamiTE: Dynamic Traffic Engineering in Software-Defined Cyber Physical Systems. In Proceedings of the IEEE International Conference on Communications (ICC) Workshops. Kansas City, USA, 20 - 24 May, 2018.
+    date: 2019-05-20
+    links:
+      - pdf: /papers/conferences/2018-icc.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/8403550
+
+  - publication: >
+      S. Misra, N. Saha and R. Bhakta (2020). Traffic-Aware Rule-Cache Assignment in SDN: Security Implications. In Proceedings of the IEEE International Conference on Communications (ICC) Workshops. Dublin, Ireland, 7 - 11 June, 2020.
+    date: 2020-06-07
+    links:
+      - pdf: /papers/conferences/2020-icc.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/9145299
+
+  - publication: >
+      N. Saha and S. Misra (2020). Dynamic Network Slice Assignment in Software-Defined IoT Networks. In Proceedings of the IEEE Global Communications Conference (GLOBECOM). Taipei, Taiwan, 7 - 11 December, 2020.
+    date: 2020-12-07
+    links:
+      - pdf: /papers/conferences/2020-globecom.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/9322271
+
+  - publication: >
+      R. Boutaba, N. Shahriar, M. A. Salahuddin, S. R. Chowdhury, N. Saha and A. James. (2021). AI-driven Closed-loop Automation in 5G and beyond Mobile Networks. In Proceedings of the 4th ACM SIGCOMM Workshop on Flexible Networks Artificial Intelligence Supported Network Flexibility and Agility (FlexNets). Virtual Conference, 23 - 27 August, 2021.
+    date: 2021-08-23
+    links:
+      - pdf: /papers/conferences/2021-flexnets.pdf
+      - doi: https://dl.acm.org/doi/10.1145/3472735.3474458
+
+  - publication: >
+      N. Saha, A. James, N. Shahriar, R. Boutaba and A. Saleh. (2022). Demonstrating Network Slice KPI Monitoring in a 5G Testbed. In Proceedings of the IEEE/IFIP Network Operations and Management Symposium (NOMS). Budapest, Hungary, 25 - 29 April, 2022.
+    date: 2022-04-25
+    links:
+      - pdf: /papers/conferences/2022-noms.pdf

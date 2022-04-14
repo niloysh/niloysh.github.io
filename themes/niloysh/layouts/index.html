@@ -17,14 +17,19 @@
 
     <section id="interests">
       <h2>Research Interests</h2>
+      {{ $datafile := .Params.datafile }}
+      {{ if $datafile }}
+      {{ with index .Site.Data $datafile }}
       <div class="icon-grid icon-grid--two-column">
-      {{ range .Site.Data.interests }}
+      {{ range .interests }}
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-bookmark"></i></div>
         <div>{{.}}</div>
       </div>
       {{ end }}
       </div>
+      {{ end }}
+      {{ end }}
 
     </section>
 
@@ -47,11 +52,13 @@
 
     <section id="Projects">
       <h2>Projects</h2>
-      
+      {{ $datafile := .Params.datafile }}
+      {{ if $datafile }}
+      {{ with index .Site.Data $datafile }}
       <section id="current_projects">
         <h3>Current Projects</h3>
         <div class="icon-grid icon-grid--one-column">
-          {{ range .Site.Data.projects.current }}
+          {{ range .projects.current }}
     
           <div class="icon-grid__item">
             <div><i class="fa-solid fa-folder"></i></div>
@@ -64,13 +71,17 @@
     
           {{ end }}
           </div>
+      {{ end }}
+      {{ end }}
       </section>
       
-
+      {{ $datafile := .Params.datafile }}
+      {{ if $datafile }}
+      {{ with index .Site.Data $datafile }}
       <section id="past_projects">
         <h3>Past Projects</h3>
         <div class="icon-grid icon-grid--one-column">
-          {{ range .Site.Data.projects.past }}
+          {{ range .projects.past }}
     
           <div class="icon-grid__item">
             <div><i class="fa-solid fa-folder"></i></div>
@@ -84,6 +95,8 @@
           {{ end }}
           </div>
       </section>
+      {{ end }}
+      {{ end }}
 
     </section>
 

@@ -1,15 +1,18 @@
 {{ define "main" }}
 <main class="content">
-    <h2>{{ .Title }}</h2>
+    {{ $datafile := .Params.datafile }}
+    {{ if $datafile }}
     <section id="awards">
-        <h3>Awards</h3>
+        <h2>Awards</h2>
+        {{ with index .Site.Data $datafile }}
         <ul>
-            {{ range sort .Site.Data.awards "date" "desc" }}
+            {{ range sort . "date" "desc" }}
             <li><a href="{{ .link }}">{{ .name }}</a></li>
             {{ end }}
         </ul>
+        {{ end }}
     </section>
-    
+    {{ end }}
         
     
 </main>

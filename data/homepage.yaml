@@ -1,0 +1,26 @@
+interests:
+  - Next-generation mobile networks
+  - AI-driven network management
+  - Software-defined networking
+  - Network function virtualization
+  - Wireless networks
+
+projects:
+  current:
+    - name: >
+        5G ELITE: AI-driven 5G Network Slice Operations & Management
+      link: https://wat5gslicing.github.io/
+    - name: >
+        5G LEAP: Flexible Open RAN Platform for 5G and beyond networks
+      link:
+
+  past:
+    - name: >
+        AmbuSens IoT based Ubiquitous Healthcare Monitoring
+      link: /posts/ambusens
+
+
+
+
+
+

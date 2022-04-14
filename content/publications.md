@@ -5,5 +5,6 @@ layout: publications
 journals: true
 conferences: true
 patents: false
+datafile: publications
 ---
 

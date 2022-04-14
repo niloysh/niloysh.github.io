@@ -1,9 +1,44 @@
-- institute: University of Waterloo, Canada
-  degree: PhD in Computer Science
-  date: 2020 - Present
-- institute: Indian Institute of Technology Kharagpur
-  degree: MS in Computer Science
-  date: 2016 - 2019
-- institute: Institute of Engineering & Management Kolkata
-  degree: BTech in Electronics & Communications Engineering
-  date: 2011 - 2015
+education:
+  - institute: University of Waterloo, Canada
+    degree: PhD in Computer Science
+    date: 2020 - Present
+  - institute: Indian Institute of Technology Kharagpur
+    degree: MS in Computer Science
+    date: 2016 - 2019
+  - institute: Institute of Engineering & Management Kolkata
+    degree: BTech in Electronics & Communications Engineering
+    date: 2011 - 2015
+
+experience:
+  - position: Teaching Assistant
+    company: University of Waterloo, Canada
+    date: Sep'20 - Present
+  - position: Teaching Assistant
+    company: Indian Institute of Technology Kharagpur
+    date: Jan'17 - Dec'18
+  - position: Junior Research Fellow
+    company: Indian Institute of Technology Kharagpur
+    date: Jun'16 - Jun'17
+
+societies:
+  - position: Member of the IEEE Communications Society
+    date: 2020 - Present
+  - position: Member of the IEEE
+    date: 2017 - Present
+  - position: Treasurer, IEEE Student Branch, IIT Kharagpur
+    date: 2019 - 2020
+  - position: Member of Student Activity Committee, IEEE Student Branch, IIT Kharagpur
+    date: 2018 - 2019
+
+reviewer:
+  journal:
+    - IEEE Journal on Selected Areas in Communications
+    - IEEE Transactions on Mobile Computing
+    - IEEE Transactions on Vehicular Technology
+    - IEEE Systems Journal
+
+  conference:
+    - IEEE NOMS '22
+    - IEEE WCNC '22
+    - NOF '21
+    - IEEE PIMRC '18, '19

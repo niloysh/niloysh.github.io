@@ -1,11 +1,12 @@
 {{ define "main" }}
 <main class="content">
-
+  {{ $datafile := .Params.datafile }}
+  {{ if $datafile }}
   <section id="education">
     <h2>Education</h2>
-
+    {{ with index .Site.Data $datafile }}
     <div class="icon-grid">
-    {{ range .Site.Data.education }}
+    {{ range .education }}
     
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-graduation-cap"></i></div>
@@ -14,13 +15,14 @@
       <div class="icon-grid__date">{{ .date }}</div>
     {{ end }}
     </div>
+    {{ end }}
   </section>
 
   <section id="work">
     <h2>Work Experience</h2>
-
+    {{ with index .Site.Data $datafile }}
     <div class="icon-grid">
-    {{ range .Site.Data.experience }}
+    {{ range .experience }}
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-briefcase"></i></div>
         <div>{{ .position }} <br> <span class="text-muted">{{ .company }}</span></div>
@@ -28,16 +30,16 @@
       <div class="icon-grid__date">{{ .date }}</div>
     {{ end }}
     </div>
-
+    {{ end }}
   </section>
 
   <section id="activities">
     <h2>Professional Activities</h2>
 
     <h3>Membership in Societies and Positions Held</h3>
-
+    {{ with index .Site.Data $datafile }}
     <div class="icon-grid">
-    {{ range .Site.Data.memberships.societies }}
+    {{ range .societies }}
   
    
       <div class="icon-grid__item">
@@ -48,15 +50,16 @@
     
     {{ end }}
     </div>
+    {{ end }}
 
     <h3>External Reviewer</h3>
-
+    {{ with index .Site.Data $datafile }}
     <div class="icon-grid icon-grid--one-column">
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-book"></i></div>
         <div>
           <strong>Journals: </strong>
-          {{ delimit .Site.Data.reviewer.journal ", " }}
+          {{ delimit .reviewer.journal ", " }}
         </div>
       </div>
 
@@ -64,11 +67,14 @@
         <div><i class="fa-solid fa-book"></i></div>
         <div>
           <strong>Conference: </strong>
-          {{ delimit .Site.Data.reviewer.conference ", " }}
+          {{ delimit .reviewer.conference ", " }}
         </div>
       </div>
     </div>
+    {{ end }}
   </section>
+  {{ end }}
+  
 
 </main>
 

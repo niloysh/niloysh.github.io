@@ -1,35 +1,41 @@
 {{ define "main" }}
 <main class="content" id="publications">
+  {{ $datafile := .Params.datafile }}
+  {{ if $datafile }}
   <section>
     <h2>Publications</h2>
     {{ if .Params.journals }}
     <h3>Journal</h3>
     <div class="publication-group">
-      {{ range sort .Site.Data.journals "date" "desc"}}
-      <div class="publication">
-        <div class="publication__item">{{.publication}}</div>
-        <div class="publication__link">
-          {{ range .links }} {{ range $key, $value := . }}
-          <a href="{{$value}}">{{$key}}</a>
-          {{ end }} {{ end }}
+      {{ with index .Site.Data $datafile }}
+        {{ range sort .journals "date" "desc"}}
+        <div class="publication">
+          <div class="publication__item">{{.publication}}</div>
+          <div class="publication__link">
+            {{ range .links }} {{ range $key, $value := . }}
+            <a href="{{$value}}">{{$key}}</a>
+            {{ end }} {{ end }}
+          </div>
         </div>
-      </div>
-      {{ end }}
+        {{ end }}
+      {{ end }} 
     </div>
     {{ end }}
 
     {{ if .Params.conferences }}
     <h3>Conference</h3>
     <div class="publication-group">
-      {{ range sort .Site.Data.conferences "date" "desc"}}
-      <div class="publication">
-        <div class="publication__item">{{.publication}}</div>
-        <div class="publication__link">
-          {{ range .links }} {{ range $key, $value := . }}
-          <a href="{{$value}}">{{$key}}</a>
-          {{ end }} {{ end }}
+      {{ with index .Site.Data $datafile }}
+        {{ range sort .conferences "date" "desc"}}
+        <div class="publication">
+          <div class="publication__item">{{.publication}}</div>
+          <div class="publication__link">
+            {{ range .links }} {{ range $key, $value := . }}
+            <a href="{{$value}}">{{$key}}</a>
+            {{ end }} {{ end }}
+          </div>
         </div>
-      </div>
+        {{ end }}
       {{ end }}
     </div>
     {{ end }}
@@ -37,14 +43,19 @@
     {{ if .Params.patents }}
     <h4>Patents</h4>
     <div class="publication-group">
-      {{ range sort .Site.Data.patents "date" "desc"}}
-      <div class="publication">
-        <div class="publication__item">{{.patent}}</div>
-      </div>
+      {{ with index .Site.Data $datafile }}
+        {{ range sort .Site.Data.patents "date" "desc"}}
+        <div class="publication">
+          <div class="publication__item">{{.patent}}</div>
+        </div>
+        {{ end }}
       {{ end }}
     </div>
     {{ end }}
   </section>
+  {{ else }}
+  {{ .Content }}
+  {{ end }}
 </main>
 
 {{ end }}
