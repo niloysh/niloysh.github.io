@@ -63,8 +63,7 @@ iframe {
 }
 
 .page {
-    height: 100vh;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.4fr 3fr;
@@ -74,6 +73,8 @@ iframe {
         "sidebar profile"
         "sidebar content"
         "sidebar footer";
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
 }
 
 
@@ -123,17 +124,25 @@ aside {
 .sidebar__social {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
-    gap: 0px 15px;
-    font-size: 24px;
+    gap: 15px;
     margin: auto;
     justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
 }
 
 .sidebar__social a {
     border-bottom: none;
     padding: 0px;
     margin: 0px;
+}
+
+.social__icon {
+    font-size: 24px;
+}
+
+.social__name {
+    line-height: 1.6;
 }
 
 .sidebar__copyright {
@@ -189,10 +198,12 @@ nav a:hover::after {
     border-radius: 2px;
     outline: 1px solid;
     outline-color: var(--color-text);
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .cta-btn a {
-    padding: 3px 10px;
+    padding: 0px 10px;
     text-decoration: none;
     border-bottom: none;
     color: var(--color-text);
@@ -212,13 +223,33 @@ nav a:hover::after {
 
 header {
     display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    
+}
+
+.header-content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 10px 0;
+} 
+
+.header-content h1 {
+    margin: 0;
+}
+
+.header-separator {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
 }
 
 .content {
     padding: 0px 30px;
+    padding-bottom: 30px;
     background-color: var(--color-background);
 }
 
@@ -233,14 +264,18 @@ header {
     gap: 10px;
     align-items: center;
     color: var(--color-text-muted);
+    font-size: 0.8em;
 }
 
 footer {
     grid-area: footer;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: var(--color-text-muted);
     font-size: 0.8em;
+    padding: 0 30px;
+    
 }
 
 
@@ -404,7 +439,7 @@ footer {
 
     .menu-btn__burger {
         width: 36px;
-        height: 4px;
+        height: 3px;
         background: black;
         border-radius: 5px;
         transition: all 0.5s ease-in-out;
@@ -415,7 +450,7 @@ footer {
         content: '';
         position: absolute;
         width: 36px;
-        height: 4px;
+        height: 3px;
         background: black;
         border-radius: 5px;
         transition: all 0.5s ease-in-out;
@@ -446,6 +481,10 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    #profile .sidebar__social {
+        display: none;
     }
  
 }
