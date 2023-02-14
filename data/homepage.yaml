@@ -12,15 +12,9 @@ projects:
       link: https://wat5gslicing.github.io/
     - name: >
         5G LEAP: Flexible Open RAN Platform for 5G and beyond networks
-      link:
+      link: https://watopenran.github.io/
 
   past:
     - name: >
         AmbuSens IoT based Ubiquitous Healthcare Monitoring
       link: /posts/ambusens
-
-
-
-
-
-
