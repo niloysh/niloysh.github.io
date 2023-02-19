@@ -24,18 +24,33 @@ journals:
       - doi: https://doi.org/10.1109/JIOT.2021.3113777
 
   - publication: >
-      S. Bera, S. Misra; N. Saha, H. Sharif (2021). Q-Soft: QoS-aware Traffic Forwarding in Software-Defined Cyber-Physical Systems. IEEE Internet of Things Journal.
+      S. Bera, S. Misra, N. Saha, H. Sharif (2021). Q-Soft: QoS-aware Traffic Forwarding in Software-Defined Cyber-Physical Systems. IEEE Internet of Things Journal.
     date: 2021-12-27
     links:
       - pdf: /papers/journals/2021-iotj-qsoft.pdf
       - doi: https://ieeexplore.ieee.org/abstract/document/9663215
 
   - publication: >
-      S. Bera, S. Misra; N. Saha, H. Sharif (2020). Traffic-Aware Dynamic Controller Assignment in SDN. IEEE Transactions on Communications. IEEE Press. Vol. 68(7), 2020.
+      S. Bera, S. Misra, N. Saha, H. Sharif (2020). Traffic-Aware Dynamic Controller Assignment in SDN. IEEE Transactions on Communications. IEEE Press. Vol. 68(7), 2020.
     date: 2020-03-25
     links:
       - pdf: /papers/journals/2020-tc-controller-assignment.pdf
       - doi: https://ieeexplore.ieee.org/document/9046815
+
+  - publication: >
+      N. Saha, M. Zangooei, M. Golkarifard, R. Boutaba (2022). Deep Reinforcement Learning Approaches to Network Slice Scaling and Placement: A Survey. IEEE Communications Magazine. IEEE Press. Vol. 61(2), 2023.
+    date: 2022-12-22
+    links:
+      - pdf: /papers/journals/2022-commag-placement.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/10004899
+
+  - publication: >
+      M. Zangooei, N. Saha, M. Golkarifard, R. Boutaba (2022). Reinforcement Learning for Radio Resource
+      Management in RAN Slicing: A Survey. IEEE Communications Magazine. IEEE Press. Vol. 61(2), 2023.
+    date: 2022-12-22
+    links:
+      - pdf: /papers/journals/2022-commag-ranslicing.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/10004901
 
 conferences:
   - publication: >
@@ -78,3 +93,18 @@ conferences:
     date: 2022-04-25
     links:
       - pdf: /papers/conferences/2022-noms.pdf
+      - doi: https://ieeexplore.ieee.org/abstract/document/9789904
+      - code: https://github.com/niloysh/5gc-config
+
+  - publication: >
+      M. S. Khan, B. Farzaneh, N. Shahriar, N. Saha and R. Boutaba. SliceSecure: Impact and Detection of DoS/DDoS Attacks on 5G Network Slices. In Proceedings of the Symposium on Security for 5G and Future Networks at IEEE Future Networks World Forum. Montreal, Canada, 12 - 14 October, 2022.
+    date: 2022-08-08
+    links:
+      - pdf: /papers/conferences/2022-futurenet-slicesecure.pdf
+
+  - publication: >
+      N. Saha, N. Shahriar, R. Boutaba and A. Saleh. (2023). MonArch: Network Slice Monitoring Architecture for Cloud Native 5G Deployments. In Proceedings of the IEEE/IFIP Network Operations and Management Symposium (NOMS). Miami, Florida, USA, 08 - 12 May, 2023.
+    date: 2022-12-24
+    links:
+      - pdf: /papers/conferences/2023-noms-monarch.pdf
+      - code: https://github.com/niloysh/5g-monarch
