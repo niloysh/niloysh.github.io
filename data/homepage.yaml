@@ -9,10 +9,10 @@ projects:
   current:
     - name: >
         5G ELITE: AI-driven 5G Network Slice Operations & Management
-      link: https://wat5gslicing.github.io/
+      link: https://rboutaba-cs.github.io/wat5gslicing
     - name: >
         5G LEAP: Flexible Open RAN Platform for 5G and beyond networks
-      link: https://watopenran.github.io/
+      link: https://rboutaba-cs.github.io/watopenran
 
   past:
     - name: >
