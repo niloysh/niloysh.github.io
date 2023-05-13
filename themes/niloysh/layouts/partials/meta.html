@@ -9,18 +9,18 @@
 <!-- cannonical -->
 <!-- Used to indicate that there are other versions of this webpage. By implementing the canonical tag in the code, your website tells search engines that this URL is the main page -->
 <base href="{{ .Permalink }}">
-<link rel="canonical" href="https://www.niloysaha.me" itemprop="url" /> 
+<link rel="canonical" href="https://niloysh.github.io" itemprop="url" />
 
 <!-- keywords and author -->
-<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ delimit . "," }}{{ end }}">
+<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ delimit . " ," }}{{ end }}">
 <meta name="author" content="{{with .Site.Params.author }}{{ . }}{{end}}">
 <meta name="copyright" content="{{with .Site.Params.author }}{{ . }}{{end}}" />
 
 <!-- search engine crawler tags -->
-<meta name="robots" content="index,follow" /> 
+<meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
 
 <!-- favicon tags -->
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -30,4 +30,3 @@
 <link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" />
 <link rel="icon" sizes="192x192" href="/favicons/android-chrome-192x192.png" />
 <link rel="icon" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
-
