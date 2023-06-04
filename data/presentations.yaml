@@ -16,3 +16,9 @@ conference:
     venue: IEEE International Conference on Communications. Virtual Conference, 7-11 June 2020.
     link: /talks/2020-icc.pdf
     date: 2020-06
+
+  - talk: >
+      MonArch: Network Slice Monitoring Architecture for Cloud Native 5G Deployments.
+    venue: IEEE/IFIP Network Operations and Management Symposium (NOMS). Miami, FL, USA, 8-12 May 2023.
+    link: /talks/2023-noms.pptx
+    date: 2023-08
