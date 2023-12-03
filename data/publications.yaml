@@ -52,6 +52,13 @@ journals:
       - pdf: /papers/journals/2022-commag-ranslicing.pdf
       - doi: https://ieeexplore.ieee.org/abstract/document/10004901
 
+  - publication: >
+      M. Zangooei, M. Golkarifard, M. Rouili, N. Saha and R. Boutaba (2023). Flexible RAN Slicing in Open RAN with Constrained Multi-agent Reinforcement Learning. IEEE Journal on Selected Areas in Communications (JSAC).
+    date: 2023-09-06
+    links:
+      - pdf: /papers/journals/2023-ran-slicing-jsac.pdf
+      - doi: https://ieeexplore.ieee.org/document/10329913
+
 conferences:
   - publication: >
       N. Saha, S. Bera and S. Misra (2018). QoS-Aware Adaptive Flow-Rule Aggregation in Software-Defined IoT. In Proceedings of the IEEE Global Communications Conference (GLOBECOM). Abu Dhabi, UAE, 9 - 13 December, 2018.
