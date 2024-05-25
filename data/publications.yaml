@@ -115,3 +115,10 @@ conferences:
     links:
       - pdf: /papers/conferences/2023-noms-monarch.pdf
       - code: https://github.com/niloysh/5g-monarch
+
+  - publication: >
+      M. Rouili, N. Saha, M. Golkarifard, M. Zangooei, R. Boutaba and A. Saleh. (2024). Evaluating Open-Source 5G SA Testbeds: Unveiling Performance Disparities in RAN Scenarios. In Proceedings of the IEEE/IFIP Network Operations and Management Symposium (NOMS). Seoul, South Korea, 06 - 10 May, 2024.
+    date: 2024-05-07
+    links:
+      - pdf: /papers/conferences/2024-noms-ran-testbed.pdf
+      - code: https://github.com/mrouili/perfEval-5G
