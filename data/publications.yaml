@@ -53,11 +53,19 @@ journals:
       - doi: https://ieeexplore.ieee.org/abstract/document/10004901
 
   - publication: >
-      M. Zangooei, M. Golkarifard, M. Rouili, N. Saha and R. Boutaba (2023). Flexible RAN Slicing in Open RAN with Constrained Multi-agent Reinforcement Learning. IEEE Journal on Selected Areas in Communications (JSAC).
+      M. Zangooei, M. Golkarifard, M. Rouili, N. Saha and R. Boutaba (2023). Flexible RAN Slicing in Open RAN with Constrained Multi-agent Reinforcement Learning. IEEE Journal on Selected Areas in Communications (JSAC). IEEE Press. Vol. 42(2), 2024.
     date: 2023-09-06
     links:
       - pdf: /papers/journals/2023-ran-slicing-jsac.pdf
       - doi: https://ieeexplore.ieee.org/document/10329913
+
+  - publication: >
+      N. Saha, N. Shahriar, M. Sulaiman, N. Limam, R. Boutaba and A. Saleh. (2024). Monarch: Monitoring Architecture for 5G and Beyond Network Slices. IEEE Transactions on Network and Service Management (TNSM).
+    date: 2024-09-28
+    links:
+      - pdf: /papers/journals/2024-tnsm-monarch.pdf
+      - doi: https://ieeexplore.ieee.org/document/10715730
+      - code: https://github.com/niloysh/5g-monarch
 
 conferences:
   - publication: >
@@ -114,6 +122,7 @@ conferences:
     date: 2022-12-24
     links:
       - pdf: /papers/conferences/2023-noms-monarch.pdf
+      - doi: https://ieeexplore.ieee.org/document/10154344
       - code: https://github.com/niloysh/5g-monarch
 
   - publication: >
@@ -121,4 +130,5 @@ conferences:
     date: 2024-05-07
     links:
       - pdf: /papers/conferences/2024-noms-ran-testbed.pdf
+      - doi: https://ieeexplore.ieee.org/document/10575687
       - code: https://github.com/mrouili/perfEval-5G

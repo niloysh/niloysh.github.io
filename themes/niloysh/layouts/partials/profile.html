@@ -1,19 +1,19 @@
 <div class="sidebar__profile">
-    <img class="sidebar__photo" src="{{.Site.Params.image}}" alt="profile-photo">
-    <section class="sidebar__affiliation">
-      <h2>Niloy Saha</h2>
-      <p>PhD Student, University of Waterloo<br> Ontario, Canada</p>
-    </section>
+  <img class="sidebar__photo" src="{{.Site.Params.image}}" alt="profile-photo">
+  <section class="sidebar__affiliation">
+    <h2>Niloy Saha</h2>
+    <p>PhD Candidate, University of Waterloo<br> Ontario, Canada</p>
+  </section>
 
-    <section class="sidebar__social">
-      {{ range .Site.Menus.social }}
-      <div class="icon-grid__item">
-        <a href="{{ .URL }}"> 
-          <div class="social__icon">{{ .Pre }}</div> 
-          <div class="social__name">{{.Name }}</div>
-        </a>
-      </div>
-      
-      {{ end }}
-    </section>
+  <section class="sidebar__social">
+    {{ range .Site.Menus.social }}
+    <div class="icon-grid__item">
+      <a href="{{ .URL }}">
+        <div class="social__icon">{{ .Pre }}</div>
+        <div class="social__name">{{.Name }}</div>
+      </a>
+    </div>
+
+    {{ end }}
+  </section>
 </div>
