@@ -32,6 +32,7 @@ societies:
 
 reviewer:
   journal:
+    - IEEE Transactions on Networking
     - IEEE Journal on Selected Areas in Communications
     - IEEE Transactions on Mobile Computing
     - IEEE Transactions on Vehicular Technology
