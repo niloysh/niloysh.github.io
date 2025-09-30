@@ -4,21 +4,43 @@
   {{ if $datafile }}
   <section>
     <h2>Publications</h2>
+
+    {{ if .Params.preprints }}
+    <h3>Preprints & In-Progress</h3>
+    <div class="publication-group">
+      {{ with index .Site.Data $datafile }}
+      {{ range sort .preprints "date" "desc"}}
+      <div class="publication">
+        <div class="publication__item">{{.publication}}</div>
+        <div class="publication__status">
+          <em>{{.status}}</em>
+        </div>
+        <div class="publication__link">
+          {{ range .links }} {{ range $key, $value := . }}
+          <a href="{{$value}}">{{$key}}</a>
+          {{ end }} {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+
     {{ if .Params.journals }}
     <h3>Journal</h3>
     <div class="publication-group">
       {{ with index .Site.Data $datafile }}
-        {{ range sort .journals "date" "desc"}}
-        <div class="publication">
-          <div class="publication__item">{{.publication}}</div>
-          <div class="publication__link">
-            {{ range .links }} {{ range $key, $value := . }}
-            <a href="{{$value}}">{{$key}}</a>
-            {{ end }} {{ end }}
-          </div>
+      {{ range sort .journals "date" "desc"}}
+      <div class="publication">
+        <div class="publication__item">{{.publication}}</div>
+        <div class="publication__link">
+          {{ range .links }} {{ range $key, $value := . }}
+          <a href="{{$value}}">{{$key}}</a>
+          {{ end }} {{ end }}
         </div>
-        {{ end }}
-      {{ end }} 
+      </div>
+      {{ end }}
+      {{ end }}
     </div>
     {{ end }}
 
@@ -26,16 +48,16 @@
     <h3>Conference</h3>
     <div class="publication-group">
       {{ with index .Site.Data $datafile }}
-        {{ range sort .conferences "date" "desc"}}
-        <div class="publication">
-          <div class="publication__item">{{.publication}}</div>
-          <div class="publication__link">
-            {{ range .links }} {{ range $key, $value := . }}
-            <a href="{{$value}}">{{$key}}</a>
-            {{ end }} {{ end }}
-          </div>
+      {{ range sort .conferences "date" "desc"}}
+      <div class="publication">
+        <div class="publication__item">{{.publication}}</div>
+        <div class="publication__link">
+          {{ range .links }} {{ range $key, $value := . }}
+          <a href="{{$value}}">{{$key}}</a>
+          {{ end }} {{ end }}
         </div>
-        {{ end }}
+      </div>
+      {{ end }}
       {{ end }}
     </div>
     {{ end }}
@@ -44,11 +66,11 @@
     <h4>Patents</h4>
     <div class="publication-group">
       {{ with index .Site.Data $datafile }}
-        {{ range sort .Site.Data.patents "date" "desc"}}
-        <div class="publication">
-          <div class="publication__item">{{.patent}}</div>
-        </div>
-        {{ end }}
+      {{ range sort .Site.Data.patents "date" "desc"}}
+      <div class="publication">
+        <div class="publication__item">{{.patent}}</div>
+      </div>
+      {{ end }}
       {{ end }}
     </div>
     {{ end }}

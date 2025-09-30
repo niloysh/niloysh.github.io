@@ -1,3 +1,21 @@
+preprints:
+  - publication: >
+      N. Saha, M. Arashloo, N. Shahriar, and R. Boutaba. (2025). Dynamic SLA-aware Network Slice Monitoring with Programmable Data Planes. 
+    date: 2025-09-30
+    links:
+
+  - publication: >
+      N. Saha, N. Limam, Y. Xiao, and R. Boutaba. (2025). Lightweight Sketch-Based Telemetry for QoS Anomaly Detection in 5G User Planes. 
+    date: 2025-09-30
+    links:
+
+  - publication: >
+      F. S. Ardestani, N. Saha, N. Limam, and R. Boutaba. (2025). Towards NWDAF-enabled Analytics and Closed-Loop Automation in 5G Networks.
+    date: 2025-05-11
+    links:
+     - arXiv: https://arxiv.org/pdf/2505.06789
+
+
 journals:
   - publication: >
       N. Saha, S. Bera and S. Misra (2018). Sway: Traffic-Aware QoS Routing in Software-Defined IoT. IEEE Transactions on Emerging Topics in Computing. IEEE Press. Vol. 9(1), 2021.
