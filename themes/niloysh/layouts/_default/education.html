@@ -90,7 +90,7 @@
   <section id="activities">
     <h2>Professional Activities</h2>
     {{ with index .Site.Data $datafile }}
-    <ul class="tight-list cv-list">
+    <ul class="cv-list">
       {{ range .activities }}
       <li>{{ . | safeHTML }}</li>
       {{ end }}

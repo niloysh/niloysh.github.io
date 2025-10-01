@@ -532,3 +532,16 @@ footer {
 .flat-list i {
     opacity: 0.6;
 }
+
+.cv-list {
+    margin: 0.25em 0 0.5em;
+    padding-left: 1.2em;
+    line-height: 1.5;
+    /* override global 1.75 */
+    font-size: 0.95em;
+    /* slightly smaller on mobile */
+}
+
+.cv-list li {
+    margin: 0.25em 0;
+}
