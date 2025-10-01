@@ -7,19 +7,23 @@
         {{ with index .Site.Data $datafile }}
         <ul>
             {{ range sort . "date" "desc" }}
-            <li><a href="{{ .link }}">{{ .name }}</a></li>
+            <li>
+                {{ if .link }}
+                <a href="{{ .link }}">{{ .name }}</a>
+                {{ else }}
+                {{ .name }}
+                {{ end }}
+                {{ with .description }}
+                <br><small>{{ . }}</small>
+                {{ end }}
+            </li>
             {{ end }}
         </ul>
         {{ end }}
     </section>
     {{ end }}
-        
-    
+
+
 </main>
 
 {{ end }}
-
-
-
-
-

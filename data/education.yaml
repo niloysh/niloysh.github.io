@@ -1,45 +1,51 @@
 education:
-  - institute: University of Waterloo, Canada
-    degree: PhD in Computer Science
-    date: 2020 - Present
-  - institute: Indian Institute of Technology Kharagpur
-    degree: MS in Computer Science
-    date: 2016 - 2019
-  - institute: Institute of Engineering & Management Kolkata
-    degree: BTech in Electronics & Communications Engineering
-    date: 2011 - 2015
+  - degree: PhD in Computer Science
+    institute: University of Waterloo, Canada
+    date: 2020 – Present
+  
+  - degree: MS in Computer Science & Engineering
+    institute: Indian Institute of Technology Kharagpur, India
+    date: 2016 – 2019
+   
+  - degree: BTech in Electronics & Communications Engineering
+    institute: Institute of Engineering & Management, Kolkata, India
+    date: 2011 – 2015
+   
 
-experience:
+research:
+  - position: PhD Researcher
+    institute: University of Waterloo, Canada
+    date: Sep 2020 – Present
+    thesis: Efficient High-precision Monitoring of Network Slices for 5G and Beyond Networks
+    supervisor: <a href="https://rboutaba.cs.uwaterloo.ca/">Prof. Raouf Boutaba</a>
+    highlights:
+      - Published research on SLA-aware slice monitoring, QoS anomaly detection, and closed-loop automation for 5G/6G networks. See <a href="/publications">Publications</a>.
+      - Built a full-stack 5G testbed integrating Intel Tofino (P4), Kubernetes-based 5G core, and ML pipelines <a href="https://github.com/niloysh/5g-monarch">[Monitoring]</a> <a href="https://github.com/niloysh/open5gs-k8s">[5G Core]</a> <a href="https://github.com/mrouili/perfEval-5G">[5G RAN]</a>.
+      - Collaborated on slice lifecycle management and RAN disaggregation <a href="https://rboutaba-cs.github.io/wat5gslicing/">[Slicing]</a> <a href="https://rboutaba-cs.github.io/watopenran/">[OpenRAN]</a>.
+      - Partnered with Rogers and Expeto on Waterloo campus private 5G; delivered executive training <a href="https://niloysh.github.io/rogers-workshop/">[Workshop]</a>.
+
+  - position: M.S. Research Scholar
+    institute: IIT Kharagpur, India
+    date: 2016 – 2018
+    thesis: QoS-Aware Software-Defined Networks for IoT Applications
+    highlights:
+      - Published research on QoS-aware SDN for IoT with POX and ONOS controllers, evaluated on Mininet.
+      - Contributed to a telemedicine project on WBAN-based healthcare with field trials <a href="https://niloysh.github.io/posts/ambusens/">[Project]</a>.
+
+teaching:
   - position: Teaching Assistant
-    company: University of Waterloo, Canada
-    date: Sep'20 - Present
+    institute: University of Waterloo
+    date: 2020 – Present
+    courses:
+      - CS456 – Computer Networks (multiple terms, 2022–25)
+      - CS798 – Network Softwarization (graduate courses, 2022–24)
   - position: Teaching Assistant
-    company: Indian Institute of Technology Kharagpur
-    date: Jan'17 - Dec'18
-  - position: Junior Research Fellow
-    company: Indian Institute of Technology Kharagpur
-    date: Jun'16 - Jun'17
+    institute: IIT Kharagpur, India
+    date: 2016 – 2018
+    courses:
+      - CS19001 – Programming and Data Structures Lab
 
-societies:
-  - position: Member of the IEEE Communications Society
-    date: 2020 - Present
-  - position: Member of the IEEE
-    date: 2017 - Present
-  - position: Treasurer, IEEE Student Branch, IIT Kharagpur
-    date: 2019 - 2020
-  - position: Member of Student Activity Committee, IEEE Student Branch, IIT Kharagpur
-    date: 2018 - 2019
-
-reviewer:
-  journal:
-    - IEEE Transactions on Networking
-    - IEEE Journal on Selected Areas in Communications
-    - IEEE Transactions on Mobile Computing
-    - IEEE Transactions on Vehicular Technology
-    - IEEE Systems Journal
-
-  conference:
-    - IEEE NOMS '22
-    - IEEE WCNC '22
-    - NOF '21
-    - IEEE PIMRC '18, '19
+activities:
+  - "Web Chair, IEEE/IFIP Network Operations and Management Symposium (NOMS) 2025"
+  - "Reviewer for IEEE/ACM journals (ToN, TMC, JSAC, TSC) and conferences (NOMS, GLOBECOM, WCNC, NOF, PIMRC) — 2020–Present"
+  - "IEEE Graduate Student Member (2016–Present); served as Treasurer (2019–2020) and Student Committee Member (2018–2019), IEEE Student Branch, IIT Kharagpur"

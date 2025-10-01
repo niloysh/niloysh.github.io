@@ -2,83 +2,102 @@
 <main class="content">
   {{ $datafile := .Params.datafile }}
   {{ if $datafile }}
+
+  <!-- Education -->
   <section id="education">
     <h2>Education</h2>
     {{ with index .Site.Data $datafile }}
     <div class="icon-grid">
-    {{ range .education }}
-    
+      {{ range .education }}
       <div class="icon-grid__item">
         <div><i class="fa-solid fa-graduation-cap"></i></div>
-        <div>{{ .degree }} <br> <span class="text-muted">{{ .institute }}</span></div>
+        <div>
+          <strong>{{ .degree }}</strong><br>
+          <span class="text-muted">{{ .institute }}</span>
+          {{ with .highlights }}
+          <ul class="tight-list">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
       </div>
       <div class="icon-grid__date">{{ .date }}</div>
-    {{ end }}
+      {{ end }}
     </div>
     {{ end }}
   </section>
 
-  <section id="work">
-    <h2>Work Experience</h2>
-    {{ with index .Site.Data $datafile }}
-    <div class="icon-grid">
-    {{ range .experience }}
-      <div class="icon-grid__item">
-        <div><i class="fa-solid fa-briefcase"></i></div>
-        <div>{{ .position }} <br> <span class="text-muted">{{ .company }}</span></div>
-      </div>
-      <div class="icon-grid__date">{{ .date }}</div>
-    {{ end }}
-    </div>
-    {{ end }}
-  </section>
-
-  <section id="activities">
-    <h2>Professional Activities</h2>
-
-    <h3>Membership in Societies and Positions Held</h3>
-    {{ with index .Site.Data $datafile }}
-    <div class="icon-grid">
-    {{ range .societies }}
-  
-   
-      <div class="icon-grid__item">
-        <div><i class="fa-solid fa-user-tie"></i></div>
-        <div>{{ .position }}</span></div>
-      </div>
-      <div class="icon-grid__date">{{ .date }}</div>
-    
-    {{ end }}
-    </div>
-    {{ end }}
-
-    <h3>External Reviewer</h3>
+  <!-- Research Experience -->
+  <section id="research">
+    <h2>Research Experience</h2>
     {{ with index .Site.Data $datafile }}
     <div class="icon-grid icon-grid--one-column">
+      {{ range .research }}
       <div class="icon-grid__item">
-        <div><i class="fa-solid fa-book"></i></div>
+        <div><i class="fa-solid fa-flask"></i></div>
         <div>
-          <strong>Journals: </strong>
-          {{ delimit .reviewer.journal ", " }}
+          <strong>{{ .position }}</strong>, {{ .institute }}<br>
+          <span class="text-muted">{{ .date }}</span>
+          {{ with .thesis }}
+          <div><em>Thesis:</em> {{ . }}</div>
+          {{ end }}
+          {{ with .supervisor }}
+          <div><em>Supervisor:</em> {{ . | safeHTML }}</div>
+          {{ end }}
+          {{ with .highlights }}
+          <ul class="tight-list">
+            {{ range . }}
+            <li>{{ . | safeHTML }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
         </div>
       </div>
-
-      <div class="icon-grid__item">
-        <div><i class="fa-solid fa-book"></i></div>
-        <div>
-          <strong>Conference: </strong>
-          {{ delimit .reviewer.conference ", " }}
-        </div>
-      </div>
+      {{ end }}
     </div>
     {{ end }}
   </section>
+
+  <!-- Teaching (single column, real bullets) -->
+  <section id="teaching">
+    <h2>Teaching Experience</h2>
+    {{ with index .Site.Data $datafile }}
+    <div class="icon-grid icon-grid--one-column">
+      {{ range .teaching }}
+      <div class="icon-grid__item">
+        <div><i class="fa-solid fa-chalkboard-teacher"></i></div>
+        <div>
+          <strong>{{ .position }}</strong>, {{ .institute }}
+          <div class="text-muted">{{ .date }}</div>
+
+          {{ with .courses }}
+          <ul class="tight-list">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- Professional Activities (CV-style: single tight list) -->
+  <section id="activities">
+    <h2>Professional Activities</h2>
+    {{ with index .Site.Data $datafile }}
+    <ul class="tight-list cv-list">
+      {{ range .activities }}
+      <li>{{ . | safeHTML }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </section>
+
   {{ end }}
-  
-
 </main>
-
 {{ end }}
-
-
-
