@@ -1,12 +1,15 @@
 html {
-    box-sizing: border-box; /* make sure padding is included in width and height of element */
+    box-sizing: border-box;
+    /* make sure padding is included in width and height of element */
     font-size: 16px;
     line-height: 1.75;
     margin: 0;
     padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -15,8 +18,8 @@ html {
     --color-text: #000;
     --color-text-light: rgba(0, 0, 0, 0.7);
     --color-text-muted: rgba(0, 0, 0, 0.5);
-    
-    --color-sidebar:#f2f3f7;
+
+    --color-sidebar: #f2f3f7;
     --color-link-rgb: 44, 152, 240;
     --color-link: rgb(var(--color-link-rgb));
     --color-link-light: rgba(var(--color-link-rgb), 0.2);
@@ -24,7 +27,8 @@ html {
 
 }
 
-body, html {
+body,
+html {
     height: 100vh;
     margin: 0;
 }
@@ -33,12 +37,15 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
 }
 
 h4 {
-    margin-bottom: 5px ;
+    margin-bottom: 5px;
 }
 
 a {
@@ -80,7 +87,7 @@ iframe {
 
 aside {
     grid-area: sidebar;
-    
+
 }
 
 .sidebar {
@@ -214,7 +221,7 @@ nav a:hover::after {
     background-color: var(--color-text);
 }
 
-@media (hover: hover){
+@media (hover: hover) {
     .cta-btn a:hover {
         color: var(--color-background);
         background-color: var(--color-text);
@@ -225,7 +232,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
-    
+
 }
 
 .header-content {
@@ -233,7 +240,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-} 
+}
 
 .header-content h1 {
     margin: 0;
@@ -275,7 +282,7 @@ footer {
     color: var(--color-text-muted);
     font-size: 0.8em;
     padding: 0 30px;
-    
+
 }
 
 
@@ -339,7 +346,7 @@ footer {
 }
 
 .publication {
-    counter-increment: index; 
+    counter-increment: index;
     display: flex;
     flex-direction: column;
 }
@@ -384,6 +391,7 @@ footer {
     .menu-btn {
         display: none;
     }
+
     #profile {
         display: none;
     }
@@ -401,13 +409,13 @@ footer {
     .page {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto 1fr auto;
-        grid-template-areas: 
+        grid-template-areas:
             "sidebar"
             "header"
             "profile"
             "content"
             "footer";
-        
+
     }
 
     .sidebar {
@@ -419,10 +427,10 @@ footer {
         transform: translateX(100%);
     }
 
-    .sidebar[data-visible="true"]{
+    .sidebar[data-visible="true"] {
         transform: translateX(0%);
     }
-    
+
     .menu-btn {
         /* position: fixed;
         z-index: 100; */
@@ -446,7 +454,8 @@ footer {
 
     }
 
-    .menu-btn__burger::before, .menu-btn__burger::after {
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
         content: '';
         position: absolute;
         width: 36px;
@@ -486,5 +495,40 @@ footer {
     #profile .sidebar__social {
         display: none;
     }
- 
+
+}
+
+
+/* tighter bullets under education/research */
+.tight-list {
+    margin: 0.25em 0 0.5em;
+    padding-left: 1.2em;
+}
+
+.tight-list>li {
+    margin: 0.1em 0;
+}
+
+/* inline course list */
+.muted-inline {
+    color: var(--color-text-muted);
+    margin-top: 0.25em;
+}
+
+/* compact activities */
+.flat-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.25em 0 0;
+}
+
+.flat-list li {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    margin: 0.35em 0;
+}
+
+.flat-list i {
+    opacity: 0.6;
 }
