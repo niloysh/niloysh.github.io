@@ -5,9 +5,10 @@ preprints:
     links:
 
   - publication: >
-      N. Saha, N. Limam, Y. Xiao, and R. Boutaba. (2025). Lightweight Sketch-Based Telemetry for QoS Anomaly Detection in 5G User Planes. 
-    date: 2025-09-30
+      N. Saha, N. Limam, Y. Xiao, and R. Boutaba. (2025). Rethinking Telemetry Design for Fine-Grained Anomaly Detection in 5G User Planes.
+    date: 2025-10-31
     links:
+      - arXiv: https://arxiv.org/pdf/2510.27664
 
   - publication: >
       F. S. Ardestani, N. Saha, N. Limam, and R. Boutaba. (2025). Towards NWDAF-enabled Analytics and Closed-Loop Automation in 5G Networks.
