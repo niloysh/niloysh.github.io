@@ -1,10 +1,5 @@
 preprints:
   - publication: >
-      N. Saha, M. Arashloo, N. Shahriar, and R. Boutaba. (2025). Dynamic SLA-aware Network Slice Monitoring with Programmable Data Planes. 
-    date: 2025-09-30
-    links:
-
-  - publication: >
       N. Saha, N. Limam, Y. Xiao, and R. Boutaba. (2025). Rethinking Telemetry Design for Fine-Grained Anomaly Detection in 5G User Planes.
     date: 2025-10-31
     links:
@@ -87,6 +82,12 @@ journals:
       - code: https://github.com/niloysh/5g-monarch
 
 conferences:
+  - publication: >
+      N. Saha, M. Arashloo, N. Shahriar, and R. Boutaba. (2025). Dynamic SLA-aware Network Slice Monitoring. In Proceedings of the ACM SIGMETRICS '26. Ann Arbor, Michigan, USA, June 8-12, 2026.
+    date: 2025-12-13
+    links:
+      - arXiv: https://arxiv.org/pdf/2512.12123
+
   - publication: >
       N. Saha, S. Bera and S. Misra (2018). QoS-Aware Adaptive Flow-Rule Aggregation in Software-Defined IoT. In Proceedings of the IEEE Global Communications Conference (GLOBECOM). Abu Dhabi, UAE, 9 - 13 December, 2018.
     date: 2018-12-09
