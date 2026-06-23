@@ -1,3 +1,10 @@
+defense:
+  - talk: >
+      Efficient High-precision Monitoring of Network Slices for 5G and Beyond Networks.
+    venue: PhD Thesis Defense, University of Waterloo. Waterloo, ON, Canada, 22 June 2026.
+    link: /talks/2026-phd-defense.pptx
+    date: 2026-06
+
 conference:
   - talk: >
       QoS-Aware Adaptive Flow-Rule Aggregation in Software-Defined IoT.

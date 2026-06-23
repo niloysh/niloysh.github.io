@@ -3,16 +3,26 @@
     <h2>{{ .Title }}</h2>
     {{ $datafile := .Params.datafile }}
     {{ if $datafile }}
+    {{ with index .Site.Data $datafile }}
+    {{ with .defense }}
+    <section id="thesis_defense">
+        <h3>PhD Thesis Defense</h3>
+        <ul>
+            {{ range sort . "date" "desc" }}
+            <li><a href="{{ .link }}">{{ .talk }}</a> {{ .venue }}</li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
     <section id="conferences_and_workshops">
-        {{ with index .Site.Data $datafile }}
         <h3>Conferences & Workshops</h3>
         <ul>
             {{ range sort .conference "date" "desc" }}
             <li><a href="{{ .link }}">{{ .talk }}</a> {{ .venue }}</li>
             {{ end }}
         </ul>
-        {{ end }}
     </section>
+    {{ end }}
     {{ end }}
 </main>
 

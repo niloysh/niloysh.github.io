@@ -50,7 +50,7 @@
       {{ with index .Site.Data $datafile }}
       {{ range sort .conferences "date" "desc"}}
       <div class="publication">
-        <div class="publication__item">{{.publication}}</div>
+        <div class="publication__item"><span>{{ .publication }}{{ with .award }} <span class="publication__award">{{ . }} <i class="fa-solid fa-award"></i></span>{{ end }}</span></div>
         <div class="publication__link">
           {{ range .links }} {{ range $key, $value := . }}
           <a href="{{$value}}">{{$key}}</a>

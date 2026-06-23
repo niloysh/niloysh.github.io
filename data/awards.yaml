@@ -1,3 +1,9 @@
+- name: Best Paper Award, IEEE/IFIP NOMS 2026
+  link: https://cs.uwaterloo.ca/news/systems-and-networking-researchers-win-noms-2026-best-paper-award
+  date: 2026-05-22
+  description: >
+     For "Rethinking Telemetry Design for Fine-Grained Anomaly Detection in 5G User Planes" (Kestrel)
+
 - name: IEEE ComSoc Student Travel Grant for ICC 2020
   link: https://icc2020.ieee-icc.org/program/student-grants
   date: 2020-05-07

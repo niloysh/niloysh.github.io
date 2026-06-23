@@ -1,7 +1,7 @@
 education:
   - degree: PhD in Computer Science
     institute: University of Waterloo, Canada
-    date: 2020 – Present
+    date: 2020 – 2026
   
   - degree: MS in Computer Science & Engineering
     institute: Indian Institute of Technology Kharagpur, India
@@ -15,7 +15,7 @@ education:
 research:
   - position: PhD Researcher
     institute: University of Waterloo, Canada
-    date: Sep 2020 – Present
+    date: Sep 2020 – Jun 2026
     thesis: Efficient High-precision Monitoring of Network Slices for 5G and Beyond Networks
     supervisor: <a href="https://rboutaba.cs.uwaterloo.ca/">Prof. Raouf Boutaba</a>
     highlights:

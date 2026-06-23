@@ -371,6 +371,21 @@ footer {
     line-height: 1.45;
 }
 
+.publication__award {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 10px;
+    padding: 1px 9px;
+    border-radius: 11px;
+    background: rgba(184, 134, 11, 0.13);
+    color: #b8860b;
+    font-weight: 600;
+    font-size: 0.82em;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
 .publication__link {
     margin-left: 50px;
     display: flex;
